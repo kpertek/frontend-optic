@@ -1,6 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import Navbar from './Components/Stationary/Navigation/Navbar';
+import Headline from './Components/Stationary/Navigation/Headline';
 
 function App() {
   return (
@@ -9,7 +8,7 @@ function App() {
       
       </header>
       <body>
-        <Navbar />
+        <Headline />
       </body>
     </div>
   );
