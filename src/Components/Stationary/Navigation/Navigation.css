@@ -2,20 +2,69 @@
 * Navbar
 */
 
+.nav {
+    background-color: #560BAD;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+
+    height: 64px;
+    /*width: 1440px;*/
+}
+
+.nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+
+.nav li {
+    border-left: 1px solid white;
+    width: 299px;
+}
+
+.nav li:last-child {
+    border-right: 1px solid white;
+    width: 298px;
+}
+
+.nav li.active {
+    background-color: #120348;
+}
+
+.nav li:hover {
+    color: #FF6DB0;
+}
+
+.nav a {
+    color: inherit;
+    text-decoration: none;
+    height: 64px;
+    width: 299px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+ /*
 #navbar {
     background-color: #560BAD;
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 0px;
-  
-    
+
+
     position: absolute;
     width: 1440px;
     height: 64px;
-    
+
 }
-  
+
 .navbarButton {
     background: none;
     color: white;
@@ -33,7 +82,7 @@
 
 .navbarButton:hover {
     color: #FF6DB0;
-}
+}*/
 
 
 /*
