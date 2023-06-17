@@ -13,7 +13,7 @@ function App() {
         <Headline />
         <Navbar />
         <div className="container">
-            <Routes>
+            <Routes> {/*Route für Startseite fehlt noch*/}
                 <Route path="/events" element={<Event />} />
                 <Route path="/spiele" element={<Spiele />} />
                 <Route path="/veranstalter" element={<Veranstalter />} />
