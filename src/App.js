@@ -6,12 +6,14 @@ import Spiele from "./Components/Stationary/Pages/Spiele";
 import Veranstalter from "./Components/Stationary/Pages/Veranstalter";
 import Laender from "./Components/Stationary/Pages/Länder";
 import Breadcrumbs from "./Components/Stationary/Navigation/Breadcrumbs";
+import Headline from "./Components/Stationary/Navigation/Headline";
 
 function App() {
   return (
     <>
         <Navbar />
         <Breadcrumbs />
+        <Headline />
         <div className="container">
             <Routes> {/*Route für Startseite fehlt noch*/}
                 <Route path="startseite/events" element={<Event />} />

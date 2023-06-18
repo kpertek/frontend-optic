@@ -1,9 +1,8 @@
 import './Pages.css'
-import Headline from "../Navigation/Headline";
 export default function Laender() {
     return (
         <>
-            <Headline />
+            <h1>Alle Länder</h1>
         </>
     )
 }
