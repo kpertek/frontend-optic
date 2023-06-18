@@ -5,16 +5,16 @@ export default function Navbar() {
     return (
       <nav className="nav">
           <ul>
-              <li><CustomLink to="/events">Events</CustomLink></li>
-              <li><CustomLink to="/spiele">Spiele</CustomLink></li>
-              <li><CustomLink to="/veranstalter">Veranstalter</CustomLink></li>
-              <li><CustomLink to="/laender">Länder</CustomLink></li>
+              <li><NavLink to="startseite/events">Events</NavLink></li>
+              <li><NavLink to="startseite/spiele">Spiele</NavLink></li>
+              <li><NavLink to="startseite/veranstalter">Veranstalter</NavLink></li>
+              <li><NavLink to="startseite/laender">Länder</NavLink></li>
           </ul>
       </nav>
     );
 }
 
-function CustomLink({ to, children, ...props}) {
+function NavLink({ to, children, ...props}) {
     const resolvedPath = useResolvedPath(to)
     const isActive = useMatch({path: resolvedPath.pathname, end: true})
 

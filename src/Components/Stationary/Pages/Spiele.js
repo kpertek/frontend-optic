@@ -1,6 +1,9 @@
 import './Pages.css'
+import Headline from "../Navigation/Headline";
 export default function Spiele() {
     return (
-        <h1>Alle Spiele</h1>
+        <>
+            <Headline />
+        </>
     )
 }

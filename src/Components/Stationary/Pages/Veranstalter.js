@@ -1,6 +1,9 @@
 import './Pages.css'
+import Headline from "../Navigation/Headline";
 export default function Veranstalter() {
     return (
-        <h1>Alle Veranstalter</h1>
+        <>
+            <Headline />
+        </>
     )
 }
