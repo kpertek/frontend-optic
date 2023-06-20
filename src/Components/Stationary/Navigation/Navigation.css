@@ -41,6 +41,8 @@
 .nav a {
     color: inherit;
     text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: bolder;
     height: 64px;
     width: 299px;
     display: flex;
@@ -100,6 +102,8 @@
 */
 .breadcrumbs {
     color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
     max-width: 1200px;
     margin: 32px auto;
 }
