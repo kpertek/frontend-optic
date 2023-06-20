@@ -7,6 +7,7 @@ import Veranstalter from "./Components/Stationary/Pages/Veranstalter";
 import Laender from "./Components/Stationary/Pages/Länder";
 import Breadcrumbs from "./Components/Stationary/Navigation/Breadcrumbs";
 import Headline from "./Components/Stationary/Navigation/Headline";
+import NavIconGroup from './Components/Stationary/Navigation/NavIconGroup';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Navbar />
         <Breadcrumbs />
         <Headline />
+        <NavIconGroup />
         <div className="container">
             <Routes> {/*Route für Startseite fehlt noch*/}
                 <Route path="startseite/events" element={<Event />} />
