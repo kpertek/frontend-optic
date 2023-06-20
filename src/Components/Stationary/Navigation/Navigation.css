@@ -155,3 +155,17 @@
     font-weight: bolder;
     font-size: 12px;
 }
+.navIconGroupItemCount
+{
+    position: absolute;
+    color: #FF6DB0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 12px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+}
