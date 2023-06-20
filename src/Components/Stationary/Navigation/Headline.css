@@ -20,6 +20,8 @@
     color: var(--secWhite);
     line-height: 47px;
     font-size: 36px;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: bolder;
 
     left: 0px;
     top: 0px;
