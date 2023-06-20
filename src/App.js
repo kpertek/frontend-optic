@@ -17,7 +17,7 @@ function App() {
         <Breadcrumbs />
         <Headline text="Alle Events"/>
         <div className="container">
-            <Routes> {/*Route für Startseite fehlt noch*/}
+            <Routes>
                 <Route path="startseite/events" element={<Event />} />
                 <Route path="startseite/spiele" element={<Spiele />} />
                 <Route path="startseite/veranstalter" element={<Veranstalter />} />
