@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
+    position: relative;
     width: 216px;
     height: 388px;
     border: 2px solid #EEC8ED;

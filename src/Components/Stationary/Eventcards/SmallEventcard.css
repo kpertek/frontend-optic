@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .small-event-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 216px;
+    height: 184px;
+    border: 2px solid #EEC8ED;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .small-event-card__image{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .small-event-card__image img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+  
+  .small-eventtitle-box {
+    width: 100%;
+    height: 43px;
+    padding: 0px 15px;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0.01%, #000000 83.85%, #000000 100%);
+    border-bottom: 2px solid #000000;
+  }
+  
+  .small-eventtitle-box .small-title p{
+    width: 111px;
+    height: 23px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    align-items: center;
+    padding-top: 10px;
+  }
+  
