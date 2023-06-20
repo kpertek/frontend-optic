@@ -22,12 +22,10 @@
 
 .nav li {
     border-left: 1px solid white;
-    width: 299px;
 }
 
 .nav li:last-child {
     border-right: 1px solid white;
-    width: 298px;
 }
 
 .nav li.active {

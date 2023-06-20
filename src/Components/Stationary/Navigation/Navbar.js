@@ -5,10 +5,10 @@ export default function Navbar() {
     return (
       <nav className="nav">
           <ul>
-              <li><NavLink to="startseite/events">Events</NavLink></li>
-              <li><NavLink to="startseite/spiele">Spiele</NavLink></li>
-              <li><NavLink to="startseite/veranstalter">Veranstalter</NavLink></li>
-              <li><NavLink to="startseite/laender">Länder</NavLink></li>
+              <NavLink to="startseite/events">Events</NavLink>
+              <NavLink to="startseite/spiele">Spiele</NavLink>
+              <NavLink to="startseite/veranstalter">Veranstalter</NavLink>
+              <NavLink to="startseite/laender">Länder</NavLink>
           </ul>
       </nav>
     );
