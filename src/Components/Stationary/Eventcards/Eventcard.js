@@ -5,6 +5,10 @@ import date from './assets/date-icon.svg';
 import location from './assets/location-icon.svg';
 
 export default function EventcardKomponente() {
+
+    
+    const [favorite, changeFavoriteState] = React.useState(null);
+
     return (
       <div class="event-card">
         <div class="event-card__image">
