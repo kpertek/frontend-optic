@@ -1,11 +1,11 @@
 import './Headline.css';
 
-export default function Headline() {
+export default function Headline(props) {
     return (
       <div className="headline">
         <div className='headlineOL'></div>
         <p>
-            Überschrift
+            {props.text}
             <div className='headlineUR'></div>
         </p>
       </div>
