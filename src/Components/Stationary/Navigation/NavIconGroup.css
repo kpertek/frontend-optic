@@ -1,7 +1,13 @@
 /*
 *NavIconGroup
-*/  
+*/
 .navIconGroup {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.navIconGroup div {
     display: flex;
 }
 
@@ -26,7 +32,7 @@
 .navIconGroupItemCount
 {
     position: absolute;
-    color: var(--prime1);
+    color: var(--primePink);
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
     font-size: 12px;

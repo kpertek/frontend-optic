@@ -3,7 +3,7 @@
 */
 
 .nav {
-    background-color: var(--bgColor);
+    background-color: var(--primeBlue);
     color: var(--secWhite);
     display: flex;
     justify-content: center;

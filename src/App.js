@@ -14,9 +14,9 @@ function App() {
         <NavIconGroup />
         <Navbar />
         <Breadcrumbs />
-        <NavIconGroup
+        {/*<NavIconGroup
           itemCount={1}
-        />
+        />*/}
         <div className="container">
             <Routes> {/*Route für Startseite fehlt noch*/}
                 <Route path="startseite/events" element={<Event />} />
