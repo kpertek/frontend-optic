@@ -9,7 +9,7 @@ export default function NavIconGroup(props) {
   return (
       <nav className="navIconGroup">
           <Link to="/"><img src={logo}/></Link>
-          <div>
+          <div className="icons">
               <div className="navIconGroupItem">
                   <img src={Herz}></img>
                   <p>Favoriten</p>
