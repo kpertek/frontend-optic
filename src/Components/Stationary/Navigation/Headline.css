@@ -1,0 +1,46 @@
+/*
+* Headline
+*/
+
+.headline {
+    position: relative;
+    text-align: center;
+    margin: 0px;
+
+    height: 92px;
+}
+
+.headline p {
+    position: absolute;
+    margin: 0px;
+    padding-left: 113px;
+    padding-right: 113px;
+    padding-top: 14px;
+    padding-bottom: 10px;
+    color: var(--secWhite);
+    line-height: 47px;
+    font-size: 36px;
+
+    left: 0px;
+    top: 0px;
+}
+
+.headlineOL {
+    position: absolute;
+    border-top: 4px solid var(--secRose);
+    border-left: 4px solid var(--secRose);
+
+    width: 106px;
+    height: 36px;
+}
+
+.headlineUR {
+    position: absolute;
+    border-bottom: 4px solid var(--secRose);
+    border-right: 4px solid var(--secRose);
+
+    bottom: 0px;
+    right: 0px;
+    width: 143px;
+    height: 16px;
+}

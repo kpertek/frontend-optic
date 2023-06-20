@@ -1,0 +1,39 @@
+/*
+*NavIconGroup
+*/  
+.navIconGroup {
+    display: flex;
+}
+
+.navIconGroupItem {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 10px;
+}
+
+.navIconGroupItem img {
+    width: 40px;
+    height: 40px;
+}
+
+.navIconGroupItem p {
+    color: var(--secWhite);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 12px;
+}
+.navIconGroupItemCount
+{
+    position: absolute;
+    color: var(--prime1);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 12px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+}

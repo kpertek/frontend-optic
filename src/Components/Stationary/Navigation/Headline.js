@@ -1,4 +1,4 @@
-import './Navigation.css';
+import './Headline.css';
 
 export default function Headline() {
     return (

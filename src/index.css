@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: #120348;
+  background-color: var(--bgColor);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -13,6 +13,19 @@ code {
     monospace;
 }
 
+:root {
+  --bgColor:#120348;
+  --primePink: #FF6DB0;
+  --primeBlue: #2E2C9A;
+  --secWhite: #fff;
+  --secRose: #EEC8ED;
+  --terLightBG: #E7E4F9;
+  --terBGDetail: #560BAD;
+  --terGreen: #00AB00;
+  --terBlack: #000000;
+  --terLightGrey: #AAAAAA;
+  --terDarkGrey: #808080;
+}
 
 *{
   margin: 0;

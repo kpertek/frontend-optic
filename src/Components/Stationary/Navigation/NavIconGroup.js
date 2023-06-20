@@ -1,7 +1,7 @@
 import Herz from './assets/Herz.svg';
 import Account from './assets/Account.svg';
 import Warenkorb from './assets/Warenkorb.svg';
-import './Navigation.css';
+import './NavIconGroup.css';
 
 export default function NavIconGroup(props) {
   return (
