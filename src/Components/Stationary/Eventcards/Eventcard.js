@@ -3,6 +3,7 @@ import './Eventcard.css';
 import price from './assets/price-icon.svg';
 import date from './assets/date-icon.svg';
 import location from './assets/location-icon.svg';
+import EventcardBewertung from './EventcardBewertung';
 
 export default function EventcardKomponente() {
 
@@ -17,7 +18,7 @@ export default function EventcardKomponente() {
             <div class="eventtitle-box"> 
                 <div class="title"> 
                     <p>Veranstalter</p></div>
-                <div class="bewertung"><p>★ 5.0</p></div>
+                <EventcardBewertung rating="5.0"/>
             </div>
         </div>
         

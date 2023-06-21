@@ -1,0 +1,34 @@
+.bewertung{
+    width: 52px;
+    height: 24px;
+    border-radius: 5px;
+}
+
+.fünf{
+    background-color: #00AB00;
+}
+.vier{
+    background-color: #93AA04;
+}
+.drei{
+    background-color: #CAB600;
+}
+.zwei{
+    background-color: #FFB800;
+}
+.eins{
+    background-color: #FF9900;
+}
+.null{
+    background-color: #FF0000;
+}
+  
+.bewertung p{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
