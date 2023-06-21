@@ -22,11 +22,11 @@ export default function Metanavi() {
             <div id="meta-navi-box">
                 <div id="first-3-links">
                     <a href="" className="metalink-text">IMPRESSUM</a>
-                    
+                    <text className="strich">|</text>
                     <a href="" className="metalink-text">DATENSCHUTZ</a>
-                    |
+                    <text className="strich">|</text>
                     <a href="" className="metalink-text">COOKIE-RICHTLINIEN</a>
-                    |
+                    <text className="strich">|</text>
                 </div>
                 <a href="" className="metalink-text" id="last-link" >ALLGEMEINE GESCHÄFTSBEDINGUNGEN</a>
             </div>
