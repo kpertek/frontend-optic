@@ -1,0 +1,58 @@
+/*
+*NavIconGroup
+*/
+.navIconGroup {
+    display: flex;
+    justify-content: space-between;
+    background-image: url("./assets/pubg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 448px;
+}
+
+.navIconGroup a {
+    margin-top: 16px;
+    margin-left: 26px;
+}
+
+.icons {
+    margin-top: 16px;
+    margin-right: 13px;
+}
+
+.navIconGroup div {
+    display: flex;
+}
+
+.navIconGroupItem {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 13px;
+}
+
+.navIconGroupItem img {
+    width: 40px;
+    height: 40px;
+}
+
+.navIconGroupItem p {
+    color: var(--secWhite);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 12px;
+}
+.navIconGroupItemCount
+{
+    position: absolute;
+    color: var(--primePink);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 12px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+}

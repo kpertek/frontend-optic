@@ -6,19 +6,19 @@ import Spiele from "./Components/Stationary/Pages/Spiele";
 import Veranstalter from "./Components/Stationary/Pages/Veranstalter";
 import Laender from "./Components/Stationary/Pages/Länder";
 import Breadcrumbs from "./Components/Stationary/Navigation/Breadcrumbs";
-import Headline from "./Components/Stationary/Navigation/Headline";
 import NavIconGroup from './Components/Stationary/Navigation/NavIconGroup';
 import Footer from './Components/Stationary/Footer/Footer';
+import Headline from './Components/Stationary/Navigation/Headline';
 
 function App() {
   return (
     <>
+        <NavIconGroup />
         <Navbar />
         <Breadcrumbs />
-        <Headline />
-        <NavIconGroup />
+        <Headline text="Alle Events"/>
         <div className="container">
-            <Routes> {/*Route für Startseite fehlt noch*/}
+            <Routes>
                 <Route path="startseite/events" element={<Event />} />
                 <Route path="startseite/spiele" element={<Spiele />} />
                 <Route path="startseite/veranstalter" element={<Veranstalter />} />
