@@ -106,7 +106,7 @@
     align-items: center;
 
     width: 340px;
-    height: 48px;
+    min-height: 48px;
     border-radius: 5px;
     color: #FFFFFF;
     border: none;
