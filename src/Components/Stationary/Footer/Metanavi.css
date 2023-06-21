@@ -1,0 +1,127 @@
+.link-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 63px;
+    padding: 0;
+
+    
+    width: 460px;
+    height: 363px;
+}
+
+.div-links-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+
+    width: 460px;
+    height: 153px;
+
+}
+
+.links-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+    width: 220px;
+    height: 152px;
+}
+
+.link-box-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 0px;
+    gap: 10px;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+
+}
+
+.link-text {
+    font-family: 'JetBrains Mono', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#meta-navi-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
+    gap: 8px;
+
+    width: 489px;
+    height: 68px;
+
+}
+
+#first-3-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+
+    width: 460px;
+    height: 24px;
+
+    font-size: 15px;
+}
+
+#last-link {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+
+    width: 460px;
+    height: 20px;
+
+}
+
+.metalink-text {
+    font-family: 'JetBrains Mono', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.last-row-footer {
+    width: 260px;
+    height: 16px;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}

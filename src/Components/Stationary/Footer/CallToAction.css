@@ -1,0 +1,119 @@
+#action-box {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 20px;
+    gap: 16px;
+
+    
+    width: 380px;
+    height: 448px;
+
+    background: #E7E4F9;
+
+    border: 4px solid #560BAD;
+    border-radius: 5px;
+}
+
+#action-title {
+    width: 340px;
+    height: 48px;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #2E2C9A;
+}
+
+#action-box-text1 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: left;
+    line-height: 18px;
+
+    width: 340px;
+    color: #000000;
+
+
+}
+
+#action-box-button1 {
+    background: #2E2C9A;
+    
+}
+
+#action-box-text2 {
+    top: 248px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: left;
+
+    width: 340px;
+
+    color: #000000;
+    
+}
+
+#divin {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    width: 340px;
+    height: 104px;
+
+}
+
+.Normal-text-action-box {
+    width: 340px;
+    height: auto;
+}
+
+
+
+.input {
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 340px;
+    height: 48px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    border: none;
+}
+
+#action-box-button2 {
+    background: #FF6DB0;
+
+}
+
+.Button {
+    justify-content: center;
+    align-items: center;
+
+    width: 340px;
+    height: 48px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    border: none;
+
+    font-family: 'Jetbrains Mono', sans-serif;
+    font-style: normal;
+    font-weight: 750;
+    font-size: 16px;
+    line-height: 21px;
+}
