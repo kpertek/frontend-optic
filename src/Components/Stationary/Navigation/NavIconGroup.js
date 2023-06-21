@@ -8,16 +8,22 @@ import logo from "./assets/logo3.png"
 export default function NavIconGroup(props) {
   return (
       <nav className="navIconGroup">
-          <Link to="/"><img src={logo}/></Link>
+          <div className="logo">
+              <Link to="/"><img src={logo}/></Link>
+          </div>
           <div className="icons">
               <div className="navIconGroupItem">
-                  <img src={Herz}></img>
-                  <p>Favoriten</p>
+                  <Link to="startseite/favorieten">
+                      <img src={Herz}></img>
+                      <p>Favoriten</p>
+                  </Link>
               </div>
               <div className="navIconGroupItem">
-                  <img src={Warenkorb}></img>
-                  {props.itemCount>0 && <div className="navIconGroupItemCount">{props.itemCount}</div>}
-                  <p>Warenkorb</p>
+                  <Link to="startseite/warenkorb">
+                      <img src={Warenkorb}></img>
+                      {props.itemCount>0 && <div className="navIconGroupItemCount">{props.itemCount}</div>}
+                      <p>Warenkorb</p>
+                  </Link>
               </div>
               <div className="navIconGroupItem">
                   <img src={Account}></img>

@@ -9,6 +9,8 @@ import Breadcrumbs from "./Components/Stationary/Navigation/Breadcrumbs";
 import NavIconGroup from './Components/Stationary/Navigation/NavIconGroup';
 import Footer from './Components/Stationary/Footer/Footer';
 import Headline from './Components/Stationary/Navigation/Headline';
+import Warenkorb from "./Components/Stationary/Pages/Warenkorb";
+import Favorieten from "./Components/Stationary/Pages/Favorieten";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
                 <Route path="startseite/spiele" element={<Spiele />} />
                 <Route path="startseite/veranstalter" element={<Veranstalter />} />
                 <Route path="startseite/laender" element={<Laender />} />
+                <Route path="startseite/warenkorb" element={<Warenkorb />} />
+                <Route path="startseite/favorieten" element={<Favorieten />} />
             </Routes>
         </div>
 
