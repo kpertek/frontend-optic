@@ -8,6 +8,7 @@ import Laender from "./Components/Stationary/Pages/Länder";
 import Breadcrumbs from "./Components/Stationary/Navigation/Breadcrumbs";
 import Headline from "./Components/Stationary/Navigation/Headline";
 import NavIconGroup from './Components/Stationary/Navigation/NavIconGroup';
+import Footer from './Components/Stationary/Footer/Footer';
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
                 <Route path="startseite/laender" element={<Laender />} />
             </Routes>
         </div>
+
+        <Footer/>
     </>
   );
 }
