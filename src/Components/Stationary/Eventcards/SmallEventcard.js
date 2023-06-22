@@ -1,7 +1,7 @@
 import React from 'react';
 import './SmallEventcard.css';
 
-export default function SmallEventcardKomponente() {
+export default function SmallEventcard() {
 
 
     return (

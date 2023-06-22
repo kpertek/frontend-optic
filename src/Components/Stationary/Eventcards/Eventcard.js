@@ -5,7 +5,7 @@ import date from './assets/date-icon.svg';
 import location from './assets/location-icon.svg';
 import EventcardBewertung from './EventcardBewertung';
 
-export default function EventcardKomponente() {
+export default function Eventcard() {
 
     
     const [favorite, changeFavoriteState] = React.useState(null);
