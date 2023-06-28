@@ -7,7 +7,7 @@ import logo from "./assets/logo3.png"
 
 export default function NavIconGroup(props) {
   return (
-      <nav className="navIconGroup">
+      <nav className={"navIconGroup " + (props.showBackground && "background")}>
           <div className="logo">
               <Link to="/"><img src={logo}/></Link>
           </div>
@@ -32,4 +32,8 @@ export default function NavIconGroup(props) {
           </div>
       </nav>
     );
+}
+
+NavIconGroup.defaultProps = {
+    showBackground: true
 }

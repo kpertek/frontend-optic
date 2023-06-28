@@ -4,6 +4,9 @@
 .navIconGroup {
     display: flex;
     justify-content: space-between;
+}
+
+.background {
     background-image: url("./assets/pubg.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
