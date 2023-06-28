@@ -1,4 +1,4 @@
-import './Pages.css'
+import './Pages.css';
 import NavIconGroup from "../Navigation/NavIconGroup";
 import Navbar from "../Navigation/Navbar";
 import Breadcrumbs from "../Navigation/Breadcrumbs";
