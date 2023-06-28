@@ -32,7 +32,7 @@ export default function Event(props) {
             <NavIconGroup />
             <Navbar />
             <Breadcrumbs />
-            <EventcardContainer headline="Alle Events" events={events}/>
+            <EventcardContainer headline="Alle Events" events={events} maxEvents={5}/>
         </>
     )
 }
