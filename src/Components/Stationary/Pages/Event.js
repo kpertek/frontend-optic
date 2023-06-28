@@ -2,19 +2,37 @@ import './Pages.css'
 import NavIconGroup from "../Navigation/NavIconGroup";
 import Navbar from "../Navigation/Navbar";
 import Breadcrumbs from "../Navigation/Breadcrumbs";
-import Headline from "../Navigation/Headline";
-import Eventcard from "../Eventcards/Eventcard";
+import { EventcardContainer } from "../Navigation/EventcardContainer";
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 
-const API_URL = "http://localhost/api/";
+export default function Event(props) {
 
-export default function Event() {
+    const [events, setEvents] = useState([]);
+
+    useEffect(() => {    
+        try
+        {
+            axios.get(props.apiURL + "events", {})
+            .then((response) => {
+                return response.data;
+            })
+            .then((data) => {
+                setEvents(data);
+            })
+        }
+        catch (error)
+        {
+            console.log(error);
+        }
+    }, [props.apiURL]);
+
     return (
         <>
             <NavIconGroup />
             <Navbar />
             <Breadcrumbs />
-            <Headline text="Alle Events"/>
-            <Eventcard />
+            <EventcardContainer headline="Alle Events" events={events}/>
         </>
     )
 }
