@@ -9,7 +9,34 @@ import Warenkorb from "./Components/Stationary/Pages/Warenkorb";
 import Favoriten from "./Components/Stationary/Pages/Favoriten";
 import Startseite from "./Components/Stationary/Pages/Startseite";
 
+import AuthService from "./services/auth.service";
+import EventBus from "./common/EventBus";
+import { useEffect, useState } from 'react';
+
 function App() {
+  const [currentUser, setCurrentUser] = useState(undefined);
+
+  useEffect(() => {
+    const user = AuthService.getCurrentUser();
+
+    if (user) {
+      setCurrentUser(user);
+    }
+
+    EventBus.on("logout", () => {
+      logOut();
+    });
+
+    return () => {
+      EventBus.remove("logout");
+    };
+  }, []);
+
+  const logOut = () => {
+    AuthService.logout();
+    setCurrentUser(undefined);
+  };
+
   return (
     <>
         <Routes>
