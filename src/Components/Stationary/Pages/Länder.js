@@ -10,8 +10,51 @@ export default function Laender() {
             <NavIconGroup />
             <Navbar />
             <Breadcrumbs />
-            <Headline text="Alle Länder"/>
-            <SmallEventcard/>
+            <div className="eventgruppe">
+                <Headline text="Top Länder"/>
+                <div className="eventcards">
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                </div>
+            </div>
+            <div className="eventgruppe">
+                <Headline text="Alle Länder"/>
+                <div className="eventcards">
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                </div>
+            </div>
         </>
     )
 }

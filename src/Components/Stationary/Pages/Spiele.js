@@ -10,8 +10,51 @@ export default function Spiele() {
             <NavIconGroup />
             <Navbar />
             <Breadcrumbs />
-            <Headline text="Alle Spiele"/>
-            <SmallEventcard/>
+            <div className="eventgruppe">
+                <Headline text="Top Spiele"/>
+                <div className="eventcards">
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                </div>
+            </div>
+            <div className="eventgruppe">
+                <Headline text="Alle Spiele"/>
+                <div className="eventcards">
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                </div>
+            </div>
         </>
     )
 }

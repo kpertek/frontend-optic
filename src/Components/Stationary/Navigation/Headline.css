@@ -5,9 +5,9 @@
 .headline {
     position: relative;
     text-align: center;
-    margin: 0px;
+    margin-left: 160px;
 
-    height: 92px;
+    height: 71px;
 }
 
 .headline p {

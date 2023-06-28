@@ -7,6 +7,8 @@
   .small-event-card{
     display: flex;
     flex-direction: column;
+    margin-right: 30px;
+    margin-bottom: 16px;
     align-items: center;
     position: relative;
     width: 216px;

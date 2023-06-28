@@ -10,8 +10,36 @@ export default function Veranstalter() {
             <NavIconGroup />
             <Navbar />
             <Breadcrumbs />
-            <Headline text="Alle Veranstalter"/>
-            <SmallEventcard/>
+            <div className="eventgruppe">
+                <Headline text="Top Veranstalter"/>
+                <div className="eventcards">
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                </div>
+            </div>
+            <div className="eventgruppe">
+                <Headline text="Alle Veranstalter"/>
+                <div className="eventcards">
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                    <SmallEventcard />
+                </div>
+            </div>
         </>
     )
 }
