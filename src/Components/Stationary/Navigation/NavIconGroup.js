@@ -13,20 +13,20 @@ export default function NavIconGroup(props) {
           </div>
           <div className="icons">
               <div className="navIconGroupItem">
-                  <Link to="/startseite/favorieten">
-                      <img src={Herz}></img>
+                  <Link to="/startseite/favoriten">
+                      <img src={Herz} alt="Favoriten"></img>
                       <p>Favoriten</p>
                   </Link>
               </div>
               <div className="navIconGroupItem">
                   <Link to="/startseite/warenkorb">
-                      <img src={Warenkorb}></img>
+                      <img src={Warenkorb} alt="Warenkorb"></img>
                       {props.itemCount>0 && <div className="navIconGroupItemCount">{props.itemCount}</div>}
                       <p>Warenkorb</p>
                   </Link>
               </div>
               <div className="navIconGroupItem">
-                  <img src={Account}></img>
+                  <img src={Account} alt="Account"></img>
                   <p>Account</p>
               </div>
           </div>
