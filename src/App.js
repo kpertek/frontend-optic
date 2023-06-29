@@ -14,8 +14,6 @@ import EventBus from "./common/EventBus";
 import { useEffect, useState } from 'react';
 import EinzelnesEvent from "./Components/Stationary/Pages/EinzelnesEvent";
 
-const API_URL = "http://localhost/api/";
-
 function App() {
   const [currentUser, setCurrentUser] = useState(undefined);
 
@@ -42,23 +40,19 @@ function App() {
 
   return (
     <>
-        <div className="Pages">
-            <Routes>
-                <Route path="/">
-                    <Route index element={<Startseite apiURL={API_URL}/>}/>
-                    <Route path="/startseite" element={<Startseite apiURL={API_URL}/>} />
-                    <Route path="/startseite/events" element={<Event apiURL={API_URL}/>} />
-                    <Route path="/startseite/spiele" element={<Spiele apiURL={API_URL}/>} />
-                    <Route path="/startseite/veranstalter" element={<Veranstalter apiURL={API_URL}/>} />
-                    <Route path="/startseite/laender" element={<Laender apiURL={API_URL}/>} />
-                    <Route path="/startseite/warenkorb" element={<Warenkorb apiURL={API_URL}/>} />
-                    <Route path="/startseite/favoriten" element={<Favoriten apiURL={API_URL}/>} />
-                    <Route path="/startseite/events/einzelnesevent" element={<EinzelnesEvent/>}/>
-                </Route>
-            </Routes>
-        </div>
-
-
+          <Routes>
+              <Route path="/">
+                  <Route index element={<Startseite/>}/>
+                  <Route path="/startseite" element={<Startseite/>} />
+                  <Route path="/startseite/events" element={<Event/>} />
+                  <Route path="/startseite/spiele" element={<Spiele/>} />
+                  <Route path="/startseite/veranstalter" element={<Veranstalter/>} />
+                  <Route path="/startseite/laender" element={<Laender/>} />
+                  <Route path="/startseite/warenkorb" element={<Warenkorb/>} />
+                  <Route path="/startseite/favoriten" element={<Favoriten/>} />
+                  <Route path="/startseite/events/einzelnesevent" element={<EinzelnesEvent/>}/>
+              </Route>
+          </Routes>
         <Footer/>
     </>
   );
