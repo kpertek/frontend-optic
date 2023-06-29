@@ -41,18 +41,21 @@ function App() {
 
   return (
     <>
-        <Routes>
-            <Route path="/">
-                <Route index element={<Startseite apiURL={API_URL}/>}/>
-                <Route path="/startseite" element={<Startseite apiURL={API_URL}/>} />
-                <Route path="/startseite/events" element={<Event apiURL={API_URL}/>} />
-                <Route path="/startseite/spiele" element={<Spiele apiURL={API_URL}/>} />
-                <Route path="/startseite/veranstalter" element={<Veranstalter apiURL={API_URL}/>} />
-                <Route path="/startseite/laender" element={<Laender apiURL={API_URL}/>} />
-                <Route path="/startseite/warenkorb" element={<Warenkorb apiURL={API_URL}/>} />
-                <Route path="/startseite/favoriten" element={<Favoriten apiURL={API_URL}/>} />
-            </Route>
-        </Routes>
+        <div className="routen">
+            <Routes>
+                <Route path="/">
+                    <Route index element={<Startseite apiURL={API_URL}/>}/>
+                    <Route path="/startseite" element={<Startseite apiURL={API_URL}/>} />
+                    <Route path="/startseite/events" element={<Event apiURL={API_URL}/>} />
+                    <Route path="/startseite/spiele" element={<Spiele apiURL={API_URL}/>} />
+                    <Route path="/startseite/veranstalter" element={<Veranstalter apiURL={API_URL}/>} />
+                    <Route path="/startseite/laender" element={<Laender apiURL={API_URL}/>} />
+                    <Route path="/startseite/warenkorb" element={<Warenkorb apiURL={API_URL}/>} />
+                    <Route path="/startseite/favoriten" element={<Favoriten apiURL={API_URL}/>} />
+                </Route>
+            </Routes>
+        </div>
+
 
         <Footer/>
     </>
