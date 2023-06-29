@@ -3,28 +3,17 @@ import NavIconGroup from "../Navigation/NavIconGroup";
 import Navbar from "../Navigation/Navbar";
 import Breadcrumbs from "../Navigation/Breadcrumbs";
 import { EventcardContainer } from "../Navigation/EventcardContainer";
-import axios from 'axios';
 import { useEffect, useState } from 'react';
+import { fetchData } from '../../../common/Requests';
 
 export default function Event(props) {
 
     const [events, setEvents] = useState([]);
+    const [topEvents, setTopEvents] = useState([]);
 
     useEffect(() => {    
-        try
-        {
-            axios.get(props.apiURL + "events", {})
-            .then((response) => {
-                return response.data;
-            })
-            .then((data) => {
-                setEvents(data);
-            })
-        }
-        catch (error)
-        {
-            console.log(error);
-        }
+        fetchData(props.apiURL + "events", setEvents);
+        fetchData(props.apiURL + "topevents", setTopEvents);
     }, [props.apiURL]);
 
     return (
@@ -32,7 +21,8 @@ export default function Event(props) {
             <NavIconGroup />
             <Navbar />
             <Breadcrumbs />
-            <EventcardContainer headline="Alle Events" events={events} maxEvents={5}/>
+            <EventcardContainer headline="Top Events" events={topEvents} maxEvents={5}/>
+            <EventcardContainer headline="Alle Events" events={events} maxEvents={0}/>
         </>
     )
 }
