@@ -47,8 +47,10 @@ export default function Eventcard(props) {
                 </div>
                 <div className="card-location">
                     <img src={locationIcon} alt="location-logo" />
-                    <p> {location.Name}</p>
-                    <p> {adress.Ort}, {land.Name}</p>
+                    <div className= "location_text">
+                        <p> {location.Name}</p>
+                        <p> {adress.Ort}, {land.Name}</p>
+                    </div>
                 </div>
             </div>
         </div>
