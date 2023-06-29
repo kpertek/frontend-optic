@@ -12,6 +12,7 @@ import Startseite from "./Components/Stationary/Pages/Startseite";
 import AuthService from "./services/auth.service";
 import EventBus from "./common/EventBus";
 import { useEffect, useState } from 'react';
+import EinzelnesEvent from "./Components/Stationary/Pages/EinzelnesEvent";
 
 const API_URL = "http://localhost/api/";
 
@@ -41,7 +42,7 @@ function App() {
 
   return (
     <>
-        <div className="routen">
+        <div className="Pages">
             <Routes>
                 <Route path="/">
                     <Route index element={<Startseite apiURL={API_URL}/>}/>
@@ -52,6 +53,7 @@ function App() {
                     <Route path="/startseite/laender" element={<Laender apiURL={API_URL}/>} />
                     <Route path="/startseite/warenkorb" element={<Warenkorb apiURL={API_URL}/>} />
                     <Route path="/startseite/favoriten" element={<Favoriten apiURL={API_URL}/>} />
+                    <Route path="/startseite/events/einzelnesevent" element={<EinzelnesEvent/>}/>
                 </Route>
             </Routes>
         </div>
