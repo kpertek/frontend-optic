@@ -11,9 +11,28 @@ export default function ZurKasse() {
     return (
         <div className="bezahlungsfeld">
             <div className="kassefeld">
-                <p className="gesamt">GESAMT: (INKL:MWST)</p>
-                <p className="versand">VERSAND:</p>
-                <button className="zurkasse">ZUR KASSE</button>
+                <div className="kassefeld_text">
+                    <div className="gesamt_preis">
+                        <div className="gesamt_inkl">
+                            <p className="gesamt">GESAMT:</p>
+                            <p className="inkl">(INKL.MWST.)</p>
+                        </div>
+                        <div className="preis">
+                            <p>Preis</p>
+                        </div>
+                    </div>
+                    <div className="versand_preis">
+                        <div className="versand">
+                            <p>VERSAND:</p>
+                        </div>
+                        <div className="preis">
+                            <p>Preis</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="zurkasse">
+                    <button>ZUR KASSE</button>
+                </div>
             </div>
             <div className="zahlungsarten">
                 <img src={zahlArt1}/>
