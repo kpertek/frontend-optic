@@ -4,6 +4,7 @@ import Headline from "../Navigation/Headline";
 import NavIconGroup from "../Navigation/NavIconGroup";
 import Navbar from "../Navigation/Navbar";
 import Breadcrumbs from "../Navigation/Breadcrumbs";
+import TicketCount from "../Ticket/TicketCount";
 
 export default function Warenkorb () {
     return (
@@ -13,6 +14,8 @@ export default function Warenkorb () {
             <Breadcrumbs />
             <Headline text="Warenkorb"/>
             <ZurKasse/>
+            <h1>Warenkorb</h1>
+            <TicketCount />
         </>
     )
 }
