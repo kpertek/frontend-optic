@@ -3,11 +3,17 @@ import './Headline.css';
 export default function Headline(props) {
     return (
       <div className="headline">
-        <div className='headlineOL'></div>
+        <div className="headlineBufferUpper">
+          <div className='headlineOL'></div>
+          <div className='headlineBuffer'></div>
+        </div>
         <p>
             {props.text}
-            <div className='headlineUR'></div>
         </p>
+        <div className="headlineBufferLower">
+          <div className='headlineBuffer'></div>
+          <div className='headlineUR'></div>
+        </div>
       </div>
     );
 }
