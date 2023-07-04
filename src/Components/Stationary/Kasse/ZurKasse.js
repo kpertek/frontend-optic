@@ -7,6 +7,7 @@ import zahlArt5 from './assets/Visa.png';
 import zahlArt6 from './assets/Mastercard.png';
 import zahlArt7 from './assets/PayPal.png';
 import zahlArt8 from './assets/SofortÜberweisung.png';
+import {Link} from "react-router-dom";
 export default function ZurKasse() {
     return (
         <div className="bezahlungsfeld">
@@ -31,7 +32,7 @@ export default function ZurKasse() {
                     </div>
                 </div>
                 <div className="zurkasse">
-                    <button>ZUR KASSE</button>
+                    <button><Link to="/versand">ZUR KASSE</Link></button>
                 </div>
             </div>
             <div className="zahlungsarten">

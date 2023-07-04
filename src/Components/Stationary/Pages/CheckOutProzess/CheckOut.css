@@ -1,0 +1,128 @@
+/*Versandadresse*/
+
+.versandadresse {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 456px;
+    border: 1px solid var(--secWhite);
+    border-radius: 5px;
+    margin-top: 56px;
+}
+
+.versandadresse input[type=text] {
+    width: 272px;
+    height: 42px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 22px;
+    margin-top: 22px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.ueberschriftVersand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Roboto', monospace;
+    height: 56px;
+    color: var(--secWhite);
+    border-bottom: 1px solid var(--secWhite);
+    margin-bottom: 25px;
+}
+
+.eingabefelder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.weiterZuZahlart {
+    display: flex;
+    justify-content: center;
+    padding-top: 26px;
+}
+
+.weiterZuZahlart button {
+    background-color: var(--primePink);
+    width: 340px;
+    height: 48px;
+    border: none;
+    border-radius: 5px;
+}
+
+.weiterZuZahlart a {
+    text-decoration: none;
+    color: var(--secWhite);
+    font-size: 16px;
+}
+
+
+/*Zahlungsmethoden*/
+.zahlungsmethoden {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 752px;
+    border: 1px solid var(--secWhite);
+    border-radius: 5px;
+    margin-top: 56px;
+}
+
+.ueberschriftZahlungsmethoden {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Roboto', monospace;
+    height: 56px;
+    color: var(--secWhite);
+}
+
+.zahlungsmethoden #list {
+    width: 100%;
+}
+
+.zahlungsmethoden .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    color: var(--secWhite);
+    border-top: 1px solid var(--secWhite);
+    cursor: pointer;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 14px;
+    padding-left: 14px;
+    font-family: 'Roboto', monospace;
+}
+
+.zahlungsmethoden .options:last-child {
+    border-bottom: 1px solid var(--secWhite);
+}
+
+.weiterZuUbersicht{
+    display: flex;
+    justify-content: center;
+    padding-top: 14px;
+}
+
+.weiterZuUbersicht button {
+    background-color: var(--primePink);
+    width: 340px;
+    height: 48px;
+    border: none;
+    border-radius: 5px;
+}
+
+.weiterZuUbersicht a {
+    text-decoration: none;
+    color: var(--secWhite);
+    font-size: 16px;
+}
+

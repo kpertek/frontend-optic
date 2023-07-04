@@ -13,6 +13,9 @@ import AuthService from "./services/auth.service";
 import EventBus from "./common/EventBus";
 import { useEffect, useState } from 'react';
 import EinzelnesEvent from "./Components/Stationary/Pages/EinzelnesEvent";
+import Versand from "./Components/Stationary/Pages/CheckOutProzess/Versand";
+import Zahlungsmethode from "./Components/Stationary/Pages/CheckOutProzess/Zahlungsmethode";
+import Uebersicht from "./Components/Stationary/Pages/CheckOutProzess/Uebersicht";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(undefined);
@@ -50,7 +53,10 @@ function App() {
                   <Route path="/startseite/laender" element={<Laender/>} />
                   <Route path="/startseite/warenkorb" element={<Warenkorb/>} />
                   <Route path="/startseite/favoriten" element={<Favoriten/>} />
-                  <Route path="/startseite/events/einzelnesevent" element={<EinzelnesEvent/>}/>
+                  <Route path="/startseite/events/einzelnesevent" element={<EinzelnesEvent/>} />
+                  <Route path="/versand" element={<Versand/>} />
+                  <Route path="/zahlungsmethode" element={<Zahlungsmethode/>} />
+                  <Route path="/bestelluebersicht" element={<Uebersicht/>} />
               </Route>
           </Routes>
         <Footer/>
