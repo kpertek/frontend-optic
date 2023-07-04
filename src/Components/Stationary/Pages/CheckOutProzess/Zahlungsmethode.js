@@ -84,7 +84,7 @@ export default function Zahlungsmethode() {
                     </li>
                 </ul>
                 <div className="weiterZuUbersicht">
-                    <button><Link to="/uebersicht">Weiter zur Übersicht</Link></button>
+                    <button><Link to="/bestelluebersicht">Weiter zur Übersicht</Link></button>
                 </div>
             </div>
         </>

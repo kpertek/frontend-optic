@@ -9,7 +9,7 @@ export default function NavbarCheckOut() {
     return (
         <nav className="navCheck">
             <ul>
-                <NavLink to="/anmeldung"><img src={anmeldung}/></NavLink>
+                <NavLink to="/anmeldung/anmelden"><img src={anmeldung}/></NavLink>
                 <NavLink to="/versand">Versand</NavLink>
                 <NavLink to="/zahlungsmethode"><img src={zahlart}/></NavLink>
                 <NavLink to="/bestelluebersicht"><img src={ueberblick}/></NavLink>

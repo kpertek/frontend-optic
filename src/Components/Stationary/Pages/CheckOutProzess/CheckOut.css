@@ -14,8 +14,7 @@
     width: 272px;
     height: 42px;
     padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 5px;
     margin-bottom: 22px;
     margin-top: 22px;
     margin-right: 10px;
@@ -125,4 +124,152 @@
     color: var(--secWhite);
     font-size: 16px;
 }
+/*Anmeldefenster*/
 
+.anmeldefenster {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    height: 296px;
+    border: 1px solid var(--secWhite);
+    border-radius: 5px;
+    margin-top: 56px;
+}
+
+.eingabefelderAnmeldung{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.anmeldefenster input {
+    width: 272px;
+    height: 42px;
+    padding: 12px;
+    border-radius: 5px;
+    margin-top: 48px;
+    margin-left: 130px;
+}
+
+.anmeldefenster input:last-child {
+    margin-left: 20px;
+}
+
+.anmelden{
+    margin-left: 302px;
+    margin-top: 48px;
+}
+
+.anmelden button {
+    background-color: var(--primePink);
+    width: 220px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+
+.anmelden a {
+    text-decoration: none;
+    color: var(--secWhite);
+    font-size: 16px;
+}
+
+/*Registierenfenster*/
+
+.registrierenfenster {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    height: 423px;
+    border: 1px solid var(--secWhite);
+    border-radius: 5px;
+    margin-top: 56px;
+}
+
+.registrierenfenster input {
+    width: 272px;
+    height: 42px;
+    padding: 12px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+
+.eingabefelderRegistrieren {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 130px;
+    margin-top: 48px;
+}
+
+.anmelden {
+    margin-left: 302px;
+    margin-top: 48px;
+}
+
+.anmelden button {
+    background-color: var(--primePink);
+    width: 220px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+
+.anmelden a {
+    text-decoration: none;
+    color: var(--secWhite);
+    font-size: 16px;
+}
+
+/*Gast Anmeldung*/
+
+.gastanmeldefenster {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    height: 296px;
+    border: 1px solid var(--secWhite);
+    border-radius: 5px;
+    margin-top: 56px;
+}
+
+.eingabefelderAnmeldungGast{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gastanmeldefenster input {
+    width: 272px;
+    height: 42px;
+    padding: 12px;
+    border-radius: 5px;
+    margin-top: 48px;
+    margin-left: 130px;
+}
+
+.gastanmeldefenster input:last-child {
+    margin-left: 20px;
+}
+
+.gastanmelden{
+    margin-left: 302px;
+    margin-top: 48px;
+}
+
+.gastanmelden button {
+    background-color: var(--primePink);
+    width: 220px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+
+.gastanmelden a {
+    text-decoration: none;
+    color: var(--secWhite);
+    font-size: 16px;
+}

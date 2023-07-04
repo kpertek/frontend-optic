@@ -1,0 +1,49 @@
+/*
+* Navbar
+*/
+
+.navAnmeldung {
+    background-color: var(--terBGDetail);
+    color: var(--secWhite);
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.navAnmeldung ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+
+.navAnmeldung li:first-child {
+    border-right: 1px solid var(--secWhite);
+}
+
+.navAnmeldung li:last-child {
+    border-left: 1px solid var(--secWhite);
+}
+
+.navAnmeldung li.active {
+    background-color: var(--bgColor);
+    color: var(--primePink);
+}
+
+.navAnmeldung li:hover {
+    color: var(--primePink);
+}
+
+.navAnmeldung a {
+    color: inherit;
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: bolder;
+    height: 72px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

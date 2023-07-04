@@ -16,6 +16,9 @@ import EinzelnesEvent from "./Components/Stationary/Pages/EinzelnesEvent";
 import Versand from "./Components/Stationary/Pages/CheckOutProzess/Versand";
 import Zahlungsmethode from "./Components/Stationary/Pages/CheckOutProzess/Zahlungsmethode";
 import Uebersicht from "./Components/Stationary/Pages/CheckOutProzess/Uebersicht";
+import Anmeldung from "./Components/Stationary/Pages/CheckOutProzess/Anmeldung";
+import Registrieren from "./Components/Stationary/Pages/CheckOutProzess/Registrieren";
+import GastAnmeldung from "./Components/Stationary/Pages/CheckOutProzess/GastAnmeldung";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(undefined);
@@ -57,6 +60,9 @@ function App() {
                   <Route path="/versand" element={<Versand/>} />
                   <Route path="/zahlungsmethode" element={<Zahlungsmethode/>} />
                   <Route path="/bestelluebersicht" element={<Uebersicht/>} />
+                  <Route path="/anmeldung/anmelden" element={<Anmeldung />} />
+                  <Route path="/anmeldung/registrieren" element={<Registrieren />} />
+                  <Route path="/anmeldung/gastanmeldung" element={<GastAnmeldung />} />
               </Route>
           </Routes>
         <Footer/>
