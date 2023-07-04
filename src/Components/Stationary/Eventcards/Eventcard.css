@@ -7,7 +7,6 @@
   .event-card{
     display: flex;
     flex-direction: column;
-    margin-right: 30px;
     align-items: center;
     position: relative;
     width: 216px;
