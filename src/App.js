@@ -56,7 +56,7 @@ function App() {
                   <Route path="/startseite/laender" element={<Laender/>} />
                   <Route path="/startseite/warenkorb" element={<Warenkorb/>} />
                   <Route path="/startseite/favoriten" element={<Favoriten/>} />
-                  <Route path="/startseite/events/einzelnesevent" element={<EinzelnesEvent/>} />
+                  <Route path="/startseite/events/:eventID" element={<EinzelnesEvent/>} />
                   <Route path="/versand" element={<Versand/>} />
                   <Route path="/zahlungsmethode" element={<Zahlungsmethode/>} />
                   <Route path="/bestelluebersicht" element={<Uebersicht/>} />
