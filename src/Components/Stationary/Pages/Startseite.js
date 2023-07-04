@@ -28,9 +28,9 @@ export default function Startseite() {
             <Breadcrumbs />
             <div className='content contentStartseite'>
                 <EventcardContainer headline="Top Events" events={topEvents} maxEvents={5}/>
-                <SmallEventcardContainer headline="Top Spiele" kategorien={topSpiele} maxKategorien={5}/>
-                <SmallEventcardContainer headline="Top Veranstalter" kategorien={topVeranstalter} maxKategorien={5}/>
-                <SmallEventcardContainer headline="Top Länder" kategorien={topLaender} maxKategorien={5}/>
+                <SmallEventcardContainer headline="Top Spiele" kategorien={topSpiele} maxKategorien={5} art="spiele"/>
+                <SmallEventcardContainer headline="Top Veranstalter" kategorien={topVeranstalter} maxKategorien={5} art="veranstalter"/>
+                <SmallEventcardContainer headline="Top Länder" kategorien={topLaender} maxKategorien={5} art="laender"/>
             </div>
         </>
     )

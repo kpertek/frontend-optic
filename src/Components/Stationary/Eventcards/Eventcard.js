@@ -5,6 +5,7 @@ import dateIcon from './assets/date-icon.svg';
 import locationIcon from './assets/location-icon.svg';
 import EventcardBewertung from './EventcardBewertung';
 import {Link} from "react-router-dom";
+import { imageURL } from '../../../common/Requests';
 
 export default function Eventcard(props) {
     const [favorite, changeFavoriteState] = React.useState(null);
@@ -18,11 +19,13 @@ export default function Eventcard(props) {
     const begin = new Date(event.Beginn);
     const ende = new Date(event.Ende);
 
+    const src =  imageURL + "events" + event.Bildpfad;
+
     return (
         <Link to="/startseite/events/einzelnesevent">
             <div className="event-card">
                 <div className="event-card__image">
-                    <img src="https://picsum.photos/200/300" alt="Event" />
+                    <img src={src} alt="Event" />
                     <button className="favorite-button"> <div className="button-icon"></div></button>
                     <div className="eventtitle-box">
                         <div className="title">

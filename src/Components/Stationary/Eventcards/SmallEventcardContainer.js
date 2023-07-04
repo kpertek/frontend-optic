@@ -13,7 +13,7 @@ export const SmallEventcardContainer = (props) =>
         <div className="kategoriegruppe">
             <Headline text={props.headline}/>
             <div className="kategoriecards">
-                {kategorien.map((kategorie, i) => <SmallEventcard key={i} kategorie={kategorie}/>)}
+                {kategorien.map((kategorie, i) => <SmallEventcard key={i} kategorie={kategorie} art={props.art}/>)}
             </div>
         </div>
     )

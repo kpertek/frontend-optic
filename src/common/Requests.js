@@ -2,6 +2,8 @@ import axios from "axios";
 
 const API_URL = "http://localhost/api/";
 
+export const imageURL = "http://localhost/api/images/";
+
 export const fetchData = (url, callback) =>
 {
     try
