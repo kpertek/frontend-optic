@@ -1,7 +1,11 @@
-.EventPage {
-
+.content {
+    margin-left: 9%;
+    margin-right: 9%;
+    width: 82%;
 }
 
-.EventsContainer {
-    
+.contentStartseite {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
 }

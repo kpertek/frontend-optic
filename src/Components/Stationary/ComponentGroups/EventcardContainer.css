@@ -1,0 +1,6 @@
+.eventcards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 32px;
+}

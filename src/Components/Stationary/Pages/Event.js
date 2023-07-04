@@ -2,7 +2,7 @@ import './Pages.css'
 import NavIconGroup from "../Navigation/NavIconGroup";
 import Navbar from "../Navigation/Navbar";
 import Breadcrumbs from "../Navigation/Breadcrumbs";
-import { EventcardContainer } from "../Navigation/EventcardContainer";
+import { EventcardContainer } from "../ComponentGroups/EventcardContainer";
 import { useEffect, useState } from 'react';
 import { fetchData } from '../../../common/Requests';
 
@@ -17,14 +17,18 @@ export default function Event() {
     }, []);
 
     return (
-        <div className='EventPage'>
+        <>
             <NavIconGroup />
             <Navbar />
             <Breadcrumbs />
-            <div className='EventsContainer'>
-                <EventcardContainer headline="Top Events" events={topEvents} maxEvents={5}/>
-                <EventcardContainer headline="Alle Events" events={events} maxEvents={0}/>
+            <div className='content'>
+                <div className='columnSide'></div>
+                <div className='EventsContainer'>
+                    <EventcardContainer headline="Top Events" events={topEvents} maxEvents={5}/>
+                    <EventcardContainer headline="Alle Events" events={events} maxEvents={0}/>
+                </div>
+                <div className='columnSide'></div>
             </div>
-        </div>
+        </>
     )
 }
