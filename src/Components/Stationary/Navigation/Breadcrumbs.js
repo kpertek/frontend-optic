@@ -17,10 +17,18 @@ export default function Breadcrumbs() {
                 </div>
             )
         })
-
-    return (
-        <div className="breadcrumbs">
-            {crumbs}
-        </div>
-    )
+    
+    if (crumbs.length <= 1)
+    {
+        return (
+            <div className="breadcrumbs"></div>
+        )
+    }
+    else{
+        return (
+            <div className="breadcrumbs">
+                {crumbs}
+            </div>
+        )
+    }
 }
