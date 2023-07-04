@@ -1,6 +1,6 @@
 import "./SmallEventcardContainer.css"
 
-import SmallEventcard from "../Eventcards/SmallEventcard"
+import SmallEventcard from "./SmallEventcard"
 import Headline from "../Navigation/Headline";
 
 export const SmallEventcardContainer = (props) =>
@@ -13,12 +13,7 @@ export const SmallEventcardContainer = (props) =>
         <div className="kategoriegruppe">
             <Headline text={props.headline}/>
             <div className="kategoriecards">
-                {/* {kategorien.map((kategorie, i) => <SmallEventcard key={i} kategorie={kategorie}/>)} */}
-                <SmallEventcard />
-                <SmallEventcard />
-                <SmallEventcard />
-                <SmallEventcard />
-                <SmallEventcard />
+                {kategorien.map((kategorie, i) => <SmallEventcard key={i} kategorie={kategorie}/>)}
             </div>
         </div>
     )

@@ -2,7 +2,7 @@ import './Pages.css'
 import NavIconGroup from "../Navigation/NavIconGroup";
 import Navbar from "../Navigation/Navbar";
 import Breadcrumbs from "../Navigation/Breadcrumbs";
-import { EventcardContainer } from "../ComponentGroups/EventcardContainer";
+import { EventcardContainer } from "../Eventcards/EventcardContainer";
 import { useEffect, useState } from 'react';
 import { fetchData } from '../../../common/Requests';
 

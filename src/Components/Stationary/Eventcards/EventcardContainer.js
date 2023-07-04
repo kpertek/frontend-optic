@@ -1,6 +1,6 @@
 import "./EventcardContainer.css"
 
-import Eventcard from "../Eventcards/Eventcard"
+import Eventcard from "./Eventcard"
 import Headline from "../Navigation/Headline";
 
 export const EventcardContainer = (props) =>
