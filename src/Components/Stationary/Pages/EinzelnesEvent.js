@@ -1,3 +1,4 @@
+import "../Bewertung/SterneBewertung.css";
 import NavIconGroup from "../Navigation/NavIconGroup";
 import Breadcrumbs from "../Navigation/Breadcrumbs";
 import Headline from "../Navigation/Headline";
@@ -34,7 +35,48 @@ export default function EinzelnesEvent() {
                         {tickets.map((ticket, i) => <Ticket event={event} ticket={ticket} key={i}/>)}
                     </div>
                     <Headline text="Bewertung"/>
-                    <SterneBewertung />
+                    <div className="bewertung_sterne">
+                        <div className="bewertung_text_1">
+                            <div className="bewertung_1">
+                                <SterneBewertung />
+                            </div>
+                            <div className="text_zu_bewertung">
+                                Akkustik und Sicht
+                            </div>
+                        </div>
+                        <div className="bewertung_text_2">
+                            <div className="bewertung_2">
+                                <SterneBewertung />
+                            </div>
+                            <div className="text_zu_bewertung">
+                                Atmosphäre
+                            </div>
+                        </div>
+                        <div className="bewertung_text_3">
+                            <div className="bewertung_3">
+                                <SterneBewertung />
+                            </div>
+                            <div className="text_zu_bewertung">
+                                Organisation
+                            </div>
+                        </div>
+                        <div className="bewertung_text_4">
+                            <div className="bewertung_4">
+                                <SterneBewertung />
+                            </div>
+                            <div className="text_zu_bewertung">
+                                Verpflegung
+                            </div>
+                        </div>
+                        <div className="bewertung_text_5">
+                            <div className="bewertung_5">
+                                <SterneBewertung />
+                            </div>
+                            <div className="text_zu_bewertung">
+                                Preis-Leistung
+                            </div>
+                        </div>
+                    </div>
                     <Headline text="Weitere Events"/>
                 </div>
             </div>
