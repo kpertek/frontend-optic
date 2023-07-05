@@ -22,12 +22,8 @@ export default function Event() {
             <Navbar />
             <Breadcrumbs />
             <div className='content'>
-                <div className='columnSide'></div>
-                <div className='EventsContainer'>
                     <EventcardContainer headline="Top Events" events={topEvents} maxEvents={5}/>
                     <EventcardContainer headline="Alle Events" events={events} maxEvents={0}/>
-                </div>
-                <div className='columnSide'></div>
             </div>
         </>
     )
