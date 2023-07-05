@@ -1,0 +1,7 @@
+.sterne input[type=radio] {
+    display: none;
+}
+
+.stern {
+    cursor: pointer;
+}

@@ -1,5 +1,4 @@
 import './Pages.css';
-import './Pages.css';
 import ZurKasse from "../Kasse/ZurKasse";
 import Headline from "../Navigation/Headline";
 import NavIconGroup from "../Navigation/NavIconGroup";
