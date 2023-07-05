@@ -5,39 +5,53 @@ import {Link} from "react-router-dom";
 import locationIcon from "../Eventcards/assets/location-icon.svg";
 import React from "react";
 import dateIcon from "../Eventcards/assets/date-icon.svg";
-export default function Ticket() {
+import { getDateString } from "../../../common/GetDateString";
+export default function Ticket(props) {
+    const event = props.event;
+    const ticket = props.ticket;
+    const begin = new Date(event.Beginn);
+    const ende = new Date(event.Ende);
+
+    const [count, setCount] = React.useState(1);
+    function increment() {
+        setCount(count + 1);
+    }
+    function decrement() {
+        setCount(count - 1);
+    }
+    
     return (
         <>
             <div className="ticket">
                 <div className="beschreibungen">
                     <div className="beschreibung_links">
                         <div className="ticket_ueberschrift">
-                            Eventname - Ticket Art
+                            {event.Name} - {ticket.Name}
                         </div>
                         <div className="infos_alle">
                             <div className="infos_event">
                                 <div className="veranstalter_name">
-                                    Veranstalter
+                                    {event.veranstalter.Name}
                                 </div>
                                 <div className="datum_event">
                                     <img src={dateIcon} alt="date-logo" />
-                                    <p>Beginn - Ende</p>
+                                    <p>{getDateString(begin)} - {getDateString(ende)}</p>
                                 </div>
                                 <div className="standort_event">
                                     <img src={locationIcon} alt="location-logo" />
                                     <div className= "location_text">
-                                        <p>Location</p>
-                                        <p>Adresse, Land</p>
+                                        <p>{event.location.Name}</p>
+                                        <p>{event.location.adresse.Ort}, {event.location.adresse.land.Name}</p>
                                     </div>
                                 </div>
                             </div>
                             <div className="info_ticket">
                                 <div className="preis_counter">
                                     <div className="preis_ticket">
-                                        Preis €
+                                        {ticket.Preis} €
                                     </div>
                                     <div className="counter">
-                                        <TicketCount />
+                                        <TicketCount increment={increment} decrement={decrement} count={count}/>
                                     </div>
                                 </div>
                                 <div className="hardticket_anzeige">
@@ -50,9 +64,7 @@ export default function Ticket() {
                     <div className="bescchreibung_rechts">
                         <div className="ticket_beschreibung">
                             <p>
-                                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                                {ticket.Beschreibung}
                             </p>
                         </div>
                     </div>
@@ -63,7 +75,7 @@ export default function Ticket() {
                             <p>Gesamtpreis: </p>
                         </div>
                         <div className="preis_ticket">
-                            <p>Preis €</p>
+                            <p>{ticket.Preis * count} €</p>
                         </div>
                     </div>
                     <div className="warenkorb_button">

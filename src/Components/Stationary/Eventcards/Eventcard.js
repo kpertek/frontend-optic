@@ -6,6 +6,7 @@ import locationIcon from './assets/location-icon.svg';
 import EventcardBewertung from './EventcardBewertung';
 import {Link} from "react-router-dom";
 import { imageURL } from '../../../common/Requests';
+import { getDateString } from '../../../common/GetDateString';
 
 export default function Eventcard(props) {
     const [favorite, changeFavoriteState] = React.useState(null);
@@ -48,7 +49,7 @@ export default function Eventcard(props) {
                         </div>
                         <div className="card-date">
                             <img src={dateIcon} alt="date-logo" />
-                            <p> {getString(begin)+" - "+getString(ende)}</p>
+                            <p> {getDateString(begin)+" - "+getDateString(ende)}</p>
                         </div>
                         <div className="card-location">
                             <img src={locationIcon} alt="location-logo" />
@@ -62,13 +63,4 @@ export default function Eventcard(props) {
             </div>
         </Link>
     );
-}
-
-const getString = (date) =>
-{
-    const day = date.getDate() >= 10 ? date.getDate().toString() : "0" + date.getDate().toString();
-    const month = (date.getMonth()+1) >= 10 ? (date.getMonth()+1).toString() : "0" + (date.getMonth()+1).toString();
-    const year = date.getFullYear()%100 >= 10 ? date.getFullYear()%100 : "0" + date.getFullYear()%100;
-    return day+"."+month+"."+year;
-    
 }
