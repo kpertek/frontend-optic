@@ -6,6 +6,7 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { fetchData } from "../../../common/Requests";
 import Ticket from "../Ticket/Ticket";
+import SterneBewertung from "../Bewertung/SterneBewertung";
 
 export default function EinzelnesEvent() {
     
@@ -33,6 +34,7 @@ export default function EinzelnesEvent() {
                         {tickets.map((ticket, i) => <Ticket event={event} ticket={ticket} key={i}/>)}
                     </div>
                     <Headline text="Bewertung"/>
+                    <SterneBewertung />
                     <Headline text="Weitere Events"/>
                 </div>
             </div>
