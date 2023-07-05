@@ -1,6 +1,7 @@
 .kategoriegruppe {
     display: flex;
     flex-direction: column;
+    max-width: 1208px;
 }
 
 .kategoriecards {
