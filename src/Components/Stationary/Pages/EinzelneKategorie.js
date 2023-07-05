@@ -1,33 +1,31 @@
 import NavIconGroup from "../Navigation/NavIconGroup";
 import Breadcrumbs from "../Navigation/Breadcrumbs";
 import Headline from "../Navigation/Headline";
-import NavbarEvent from "../Navigation/NavbarEvent";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { fetchData } from "../../../common/Requests";
+import Navbar from "../Navigation/Navbar";
 
-export default function EinzelnesEvent() {
+export default function EinzelneKategorie() {
     
-    let { eventID } = useParams();
+    let { art, id } = useParams();
 
-    const [event, setEvent] = useState([]);
+    const [kategorie, setKategorie] = useState([]);
 
     useEffect(() => {    
-        fetchData("events/" + eventID, setEvent);
+        fetchData(art + "/" + id, setKategorie);
     }, []);
     
     return (
         <>
             <NavIconGroup />
-            <NavbarEvent />
-            <Breadcrumbs sitename={event.Name}/>
+            <Navbar />
+            <Breadcrumbs sitename={kategorie.Name}/>
             <div className='content'>
                 <div className='singlePageInnerContainer'>
-                    <Headline text={event.Name}/>
-                    <p>{event.Beschreibung}</p>
-                    <Headline text="Tickets"/>
-                    <Headline text="Bewertung"/>
-                    <Headline text="Weitere Events"/>
+                    <Headline text={kategorie.Name}/>
+                    <p>{kategorie.Beschreibung}</p>
+                    <Headline text="Events"/>
                 </div>
             </div>
         </>

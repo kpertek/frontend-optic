@@ -9,7 +9,7 @@
     row-gap: 40px;
 }
 
-.eventPageInnerContainer {
+.singlePageInnerContainer {
     width: 100%;
     max-width: 1208px;
     display: flex;
@@ -18,6 +18,6 @@
     row-gap: 40px;
 }
 
-.eventPageInnerContainer p {
+.singlePageInnerContainer p {
     color: var(--secWhite);
 }
