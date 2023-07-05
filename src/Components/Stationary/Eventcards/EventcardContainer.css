@@ -1,6 +1,7 @@
 .eventgruppe {
     display: flex;
     flex-direction: column;
+    max-width: 1208px;
 }
 
 .eventcards {

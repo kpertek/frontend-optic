@@ -2,6 +2,7 @@
     margin-left: 9%;
     margin-right: 9%;
     width: 82%;
+    max-width: 82%;
 
     display: flex;
     flex-direction: column;
