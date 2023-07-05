@@ -22,7 +22,7 @@ export default function Eventcard(props) {
     const src =  imageURL + "events" + event.Bildpfad;
 
     return (
-        <Link to="/startseite/events/einzelnesevent">
+        <Link to={"/startseite/events/" + event.id}>
             <div className="event-card">
                 <div className="event-card__image">
                     <img src={src} alt="Event" />

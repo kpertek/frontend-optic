@@ -2,10 +2,22 @@
     margin-left: 9%;
     margin-right: 9%;
     width: 82%;
-    max-width: 82%;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 40px;
+}
+
+.eventPageInnerContainer {
+    width: 100%;
+    max-width: 1208px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 40px;
+}
+
+.eventPageInnerContainer p {
+    color: var(--secWhite);
 }
