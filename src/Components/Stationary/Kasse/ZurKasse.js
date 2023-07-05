@@ -32,7 +32,7 @@ export default function ZurKasse() {
                     </div>
                 </div>
                 <div className="zurkasse">
-                    <button><Link to="/versand">ZUR KASSE</Link></button>
+                    <Link to="/versand"><button>ZUR KASSE</button></Link>
                 </div>
             </div>
             <div className="zahlungsarten">

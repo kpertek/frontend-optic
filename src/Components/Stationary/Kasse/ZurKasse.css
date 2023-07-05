@@ -99,6 +99,13 @@
     margin-bottom: 13px;
 }
 
+.zurkasse button {
+    color: var(--secWhite);
+    font-size: 16px;
+    font-family: 'JetBrains Mono', monospace;
+    cursor: pointer;
+}
+
 .versand_preis {
     display: flex;
     flex-direction: row;
