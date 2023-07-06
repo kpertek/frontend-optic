@@ -1,10 +1,12 @@
 import "./CheckOut.css";
 import NavbarCheckOut from "./NavbarCheckOut";
 import {Link} from "react-router-dom";
+import NavIconGroupCheck from "./NavIconGroupCheck";
 
 export default function Versand() {
     return (
         <>
+            <NavIconGroupCheck showBackgroundCheck = {false}/>
             <NavbarCheckOut />
             <div className="versandadresse">
                 <div className="ueberschriftVersand">

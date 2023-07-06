@@ -3,7 +3,7 @@ import Account from './assets/Account.svg';
 import Warenkorb from './assets/Warenkorb.svg';
 import './NavIconGroup.css';
 import {Link} from "react-router-dom";
-import logo from "./assets/logo3.png"
+import logo from "./assets/logo3.png";
 
 export default function NavIconGroup(props) {
   return (

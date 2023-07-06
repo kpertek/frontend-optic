@@ -1,0 +1,68 @@
+/*
+*NavIconGroupCheck
+*/
+.navIconGroupCheck {
+    display: flex;
+    justify-content: space-between;
+}
+
+.backgroundCheck {
+    background-image: url("./assets/pubg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 448px;
+}
+
+.logoCheck {
+    margin-top: 16px;
+    margin-left: 26px;
+}
+
+.iconsCheck {
+    margin-top: 16px;
+    margin-right: 13px;
+}
+
+.navIconGroupCheck div {
+    display: flex;
+}
+
+.navIconGroupItemCheck {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 13px;
+}
+
+.navIconGroupItemCheck img {
+    width: 40px;
+    height: 40px;
+}
+
+.navIconGroupItemCheck a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navIconGroupItemCheck p {
+    color: var(--secWhite);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 12px;
+}
+.navIconGroupItemCountCheck
+{
+    position: absolute;
+    color: var(--primePink);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 12px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+}

@@ -14,9 +14,11 @@ export default function Warenkorb () {
             <Navbar />
             <Breadcrumbs />
             <div className="content">
-                <Headline text="Warenkorb"/>
-                <ZurKasse/>
-                <Ticket  />
+                <div className="singlePageInnerContainer">
+                    <Headline text="Warenkorb"/>
+                    <ZurKasse/>
+                    {/*<Ticket  />*/}
+                </div>
             </div>
         </>
     )

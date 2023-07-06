@@ -9,9 +9,11 @@ import mastercard from './assets/Mastercard.png';
 import paypal from './assets/PayPal.png';
 import sofort from './assets/SofortÜberweisung.png';
 import {Link} from "react-router-dom";
+import NavIconGroupCheck from "./NavIconGroupCheck";
 export default function Zahlungsmethode() {
     return (
         <>
+            <NavIconGroupCheck showBackgroundCheck = {false}/>
             <NavbarCheckOut/>
             <div className="zahlungsmethoden">
                 <div className="ueberschriftZahlungsmethoden">
