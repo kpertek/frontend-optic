@@ -7,7 +7,9 @@ const Profil = () => {
   const [user, setUser] = useState(undefined);
 
   useEffect(() => {    
-    fetchUserData("user/" + currentUser.id, setUser);
+    AuthService.attachUserObs(setUser);
+
+    return () => AuthService.removeUserObs(setUser);
   }, []);
 
   if(!AuthService.isLoggedIn() || user === undefined)

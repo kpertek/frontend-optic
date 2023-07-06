@@ -4,9 +4,21 @@ import Warenkorb from './assets/Warenkorb.svg';
 import './NavIconGroup.css';
 import {Link} from "react-router-dom";
 import logo from "./assets/logo3.png";
+import { useEffect, useState } from 'react';
+import AuthService from '../../../services/auth.service';
 
 export default function NavIconGroup(props) {
-  return (
+  
+    const [user, setUser] = useState(undefined);
+    const accountText = ((user===undefined) ? "Account" : user.vorname);
+
+    useEffect(() => {    
+        AuthService.attachUserObs(setUser);
+
+        return () => AuthService.removeUserObs(setUser);
+    }, []);
+  
+    return (
       <nav className={"navIconGroup " + (props.showBackground && "background")}>
           <div className="logo">
               <Link to="/"><img src={logo}/></Link>
@@ -28,7 +40,7 @@ export default function NavIconGroup(props) {
               <div className="navIconGroupItem">
                     <Link to="/startseite/account">
                         <img src={Account} alt="Account"></img>
-                        <p>Account</p>
+                        <p>{accountText}</p>
                     </Link>
               </div>
           </div>

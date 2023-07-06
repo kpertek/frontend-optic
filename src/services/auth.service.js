@@ -1,4 +1,5 @@
 import axios from "axios";
+import { fetchUserData } from "../common/Requests";
 
 const API_URL = "http://localhost/api/";
 
@@ -14,7 +15,7 @@ const register = (vorname, nachname, email, password) => {
     (response) => {
         //hier ggf. nur eine Erfolgsmeldung oder direkt einloggen
         console.log(response);
-        localStorage.setItem("user", JSON.stringify(response.data));
+        onLogin(response);
     },
     (error) => {
         const resMessage =
@@ -37,7 +38,7 @@ const login = (email, password) => {
       //einfaches debug
       console.log("debug-info:");
       console.log(response.data);
-      localStorage.setItem("user", JSON.stringify(response.data));
+      onLogin(response);
 
       return response.data;
     },
@@ -67,12 +68,47 @@ const isLoggedIn = () =>
   else return true;
 };
 
+const onLogin = (response) =>
+{
+  localStorage.setItem("user", JSON.stringify(response.data));
+  fetchUserData("user/" + getCurrentUser().id, setUserData);
+}
+
+/*
+* UserObserver implementation
+*/
+
+const userObserver = [];
+
+const setUserData = (data) =>
+{
+  localStorage.setItem("userData", JSON.stringify(data));
+  notifyUserObs(data);
+}
+
+const notifyUserObs = (data) =>
+{
+  userObserver.forEach((func) => func(data));
+}
+
+const attachUserObs = (callback) =>
+{
+  userObserver.push(callback);
+}
+
+const removeUserObs = (callback) =>
+{
+  userObserver.splice((item) => item !== callback);
+}
+
 const AuthService = {
   register,
   login,
   logout,
   getCurrentUser,
   isLoggedIn,
+  attachUserObs,
+  removeUserObs
 };
 
 export default AuthService;
