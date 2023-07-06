@@ -14,6 +14,7 @@ const register = (vorname, nachname, email, password) => {
     (response) => {
         //hier ggf. nur eine Erfolgsmeldung oder direkt einloggen
         console.log(response);
+        localStorage.setItem("user", JSON.stringify(response.data));
     },
     (error) => {
         const resMessage =
@@ -39,7 +40,16 @@ const login = (email, password) => {
       localStorage.setItem("user", JSON.stringify(response.data));
 
       return response.data;
-    });
+    },
+    (error) => {
+        const resMessage =
+        (error.response &&
+            error.response.data &&
+            error.response.data.message) ||
+        error.message ||
+        error.toString();
+    }
+  );
 };
 
 const logout = () => {
@@ -53,14 +63,8 @@ const getCurrentUser = () => {
 
 const isLoggedIn = () =>
 {
-  if(getCurrentUser() === undefined || getCurrentUser().access_token === undefined || test === undefined)
-  {
-    return false;
-  }
-  else
-  {
-    return true;
-  }
+  if(getCurrentUser() === undefined || getCurrentUser().access_token === undefined) return false;
+  else return true;
 };
 
 const AuthService = {
