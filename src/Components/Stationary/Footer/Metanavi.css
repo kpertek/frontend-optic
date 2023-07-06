@@ -87,6 +87,11 @@
     font-size: 15px;
 }
 
+.strich {
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
 #last-link {
     display: flex;
     flex-direction: row;
