@@ -18,7 +18,7 @@ export default function Anmeldung() {
                         <input type="password" id="passwort" name="passwort" placeholder="Passwort"/>
                     </div>
                     <div className="anmelden">
-                        <button><Link to="/versand">Anmelden</Link></button>
+                        <Link to="/versand"><button>Anmelden</button></Link>
                     </div>
                 </div>
             </div>

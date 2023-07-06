@@ -156,23 +156,24 @@
     margin-left: 20px;
 }
 
-.anmelden{
+.anmelden {
     margin-left: 302px;
     margin-top: 48px;
 }
 
 .anmelden button {
     background-color: var(--primePink);
+    cursor: pointer;
     width: 220px;
     height: 40px;
     border: none;
     border-radius: 5px;
+    color: var(--secWhite);
+    font-size: 16px;
 }
 
 .anmelden a {
     text-decoration: none;
-    color: var(--secWhite);
-    font-size: 16px;
 }
 
 /*Registierenfenster*/
