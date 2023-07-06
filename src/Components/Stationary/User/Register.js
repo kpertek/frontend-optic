@@ -30,7 +30,7 @@ const Register = () =>
 
     const handleRegister = (event) => {
         event.preventDefault();
-         AuthService.register(vorname, nachname, email, password);
+        AuthService.register(vorname, nachname, email, password);
     };
     
     return (

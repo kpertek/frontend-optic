@@ -2,12 +2,30 @@ import axios from "axios";
 
 const API_URL = "http://localhost/api/";
 
-const register = (name, email, password) => {
+const register = (vorname, nachname, email, password) => {
   return axios.post(API_URL + "register", {
-    name,
+    vorname,
+    nachname,
     email,
     password,
-  });
+  })
+  .then(
+    (response) => {
+      //hier ggf. nur eine Erfolgsmeldung oder direkt einloggen
+      // setMessage(JSON.stringify(response.data));
+      //setMessage(response.data.message);
+      console.log(response.data);
+      localStorage.setItem("user", JSON.stringify(response.data));
+    },
+    (error) => {
+      const resMessage =
+        (error.response &&
+          error.response.data &&
+          error.response.data.message) ||
+        error.message ||
+        error.toString();
+    }
+  );
 };
 
 const login = (email, password) => {
