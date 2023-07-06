@@ -1,0 +1,25 @@
+.login_felder {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.login_felder input {
+    width: 272px;
+    height: 40px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+}
+
+.login_felder input[type=submit] {
+    background-color: var(--primePink);
+    color: var(--secWhite);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 15px;
+    width: 214px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 64px;
+}

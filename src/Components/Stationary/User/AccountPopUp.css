@@ -1,0 +1,83 @@
+.popup {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 455px;
+    border: 1px solid var(--secWhite);
+    border-radius: 5px;
+    background-color: var(--bgColor);
+}
+
+.popup_ueberschrift_close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
+    min-height: 72px;
+    border-bottom: 1px solid var(--secWhite);
+}
+
+.popup_ueberschrift {
+    text-align: center;
+    color: var(--secWhite);
+    font-size: 24px;
+    font-family: 'Roboto', monospace;
+}
+
+.popup_close {
+
+}
+
+.popup_navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--secWhite);
+    font-size: 20px;
+    font-family: 'Roboto', monospace;
+    background-color: var(--terBGDetail);
+    margin-bottom:  40px;
+}
+
+.popup_registrieren {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 55px;
+    border-bottom: 1px solid var(--secWhite);
+    border-right: 1px solid var(--secWhite);
+    cursor: pointer;
+}
+
+.popup_anmelden {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 55px;
+    border-bottom: 1px solid var(--secWhite);
+    border-left: 1px solid var(--secWhite);
+    cursor: pointer;
+}
+
+.popup_anmelden:hover {
+    color: var(--primePink);
+}
+
+.popup_anmelden.active {
+    background-color: var(--bgColor);
+    color: var(--primePink);
+    border-bottom: none;
+}
+
+.popup_registrieren:hover {
+    color: var(--primePink);
+}
+
+.popup_registrieren.active {
+    background-color: var(--bgColor);
+    color: var(--primePink);
+    border-bottom: none;
+}
+

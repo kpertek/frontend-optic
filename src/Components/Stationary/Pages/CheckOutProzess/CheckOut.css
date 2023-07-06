@@ -12,7 +12,7 @@
 
 .versandadresse input[type=text] {
     width: 272px;
-    height: 42px;
+    height: 40px;
     padding: 12px;
     border-radius: 5px;
     margin-bottom: 22px;
@@ -144,7 +144,7 @@
 
 .anmeldefenster input {
     width: 272px;
-    height: 42px;
+    height: 40px;
     padding: 12px;
     border: none;
     border-radius: 5px;
@@ -190,7 +190,7 @@
 
 .registrierenfenster input {
     width: 272px;
-    height: 42px;
+    height: 40px;
     padding: 12px;
     border: none;
     border-radius: 5px;
@@ -247,7 +247,7 @@
 
 .gastanmeldefenster input {
     width: 272px;
-    height: 42px;
+    height: 40px;
     padding: 12px;
     border: none;
     border-radius: 5px;

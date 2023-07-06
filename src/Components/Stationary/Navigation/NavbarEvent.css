@@ -21,19 +21,19 @@
 }
 
 .navE li {
-    border-left: 1px solid var(--secWhite);;
+    border-left: 1px solid var(--secWhite);
 }
 
 .navE li:last-child {
-    border-right: 1px solid var(--secWhite);;
+    border-right: 1px solid var(--secWhite);
 }
 
 .navE li.active {
-    background-color: var(--bgColor);;
+    background-color: var(--bgColor);
 }
 
 .navE li:hover {
-    color: var(--primePink);;
+    color: var(--primePink);
 }
 
 .navE a {

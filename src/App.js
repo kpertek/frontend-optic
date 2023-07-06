@@ -21,6 +21,7 @@ import Registrieren from "./Components/Stationary/Pages/CheckOutProzess/Registri
 import GastAnmeldung from "./Components/Stationary/Pages/CheckOutProzess/GastAnmeldung";
 import EinzelneKategorie from './Components/Stationary/Pages/EinzelneKategorie';
 import Profil from './Components/Stationary/User/Profil';
+import AccountPopUp from "./Components/Stationary/User/AccountPopUp";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(undefined);
@@ -72,6 +73,7 @@ function App() {
                   <Route path="/anmeldung/anmelden" element={<Anmeldung currentUser={currentUser}/>} />
                   <Route path="/anmeldung/registrieren" element={<Registrieren currentUser={currentUser}/>} />
                   <Route path="/anmeldung/gastanmeldung" element={<GastAnmeldung currentUser={currentUser}/>} />
+                  <Route path="/popup" element={<AccountPopUp />} />
               </Route>
           </Routes>
         <Footer/>

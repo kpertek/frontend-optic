@@ -1,3 +1,4 @@
+import "./Login.css";
 import { useState } from "react";
 import AuthService from "../../../services/auth.service";
 
@@ -24,9 +25,11 @@ const Login = () =>
     return (
         <div>
             <form onSubmit={handleLogin}>
-                <input type="text" placeholder="E-Mail-Adresse" name="email" value={email} onChange={onChangeEmail}/>
-                <input type="text" placeholder="Passwort" name="password" value={password} onChange={onChangePassword}/>
-                <input type="submit" />
+                <div className="login_felder">
+                    <input type="text" placeholder="E-Mail-Adresse" name="email" value={email} onChange={onChangeEmail}/>
+                    <input type="text" placeholder="Passwort" name="password" value={password} onChange={onChangePassword}/>
+                    <input type="submit" value="Anmelden"/>
+                </div>
             </form>
         </div>
     )
