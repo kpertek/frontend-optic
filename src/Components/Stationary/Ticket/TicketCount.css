@@ -1,0 +1,25 @@
+.ticket-count button {
+    width: 24px;
+    height: 24px;
+    background-color: var(--primePink);
+    color: var(--secWhite);
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ticket-count button:disabled {
+    visibility: hidden;
+}
+
+.ticket-count input {
+    width: 52px;
+    height: 24px;
+    border: 1px solid var(--secWhite);
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--secWhite);
+    font-size: 15px;
+    text-align: center;
+}

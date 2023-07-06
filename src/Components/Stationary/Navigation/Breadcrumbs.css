@@ -7,6 +7,8 @@
     font-weight: bold;
     max-width: 1200px;
     margin: 32px auto;
+
+    width: 1196px;
 }
 
 .breadcrumbs > *{

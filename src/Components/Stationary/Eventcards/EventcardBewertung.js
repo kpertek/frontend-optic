@@ -19,7 +19,7 @@ export default function EventcardBewertung(props) {
     }
     return (
 
-        <div class={("bewertung " +changecolor(props))}>
+        <div className={("bewertung " +changecolor(props))}>
             <p>★ {props.rating}</p>
         </div>
         

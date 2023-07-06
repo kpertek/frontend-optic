@@ -1,17 +1,21 @@
 import React from 'react';
 import './SmallEventcard.css';
+import { imageURL } from '../../../common/Requests';
+import { Link } from 'react-router-dom';
 
-export default function SmallEventcardKomponente() {
-
-
-    return (
-      <div class="small-event-card">
-        <div class="small-event-card__image">
-            <img src="https://picsum.photos/200/300" alt="Event" />
-            <div class="small-eventtitle-box"> 
-                <div class="small-title"> <p>Veranstalter</p></div>
+export default function SmallEventcard(props) {
+  
+  const src =  imageURL + props.art + props.kategorie.Bildpfad;
+  const dest = "/startseite/" + props.art + "/" + props.kategorie.id;
+  
+  return (
+      <Link className="small-event-card" to={dest}>
+        <div className="small-event-card__image">
+            <img src={src} alt="Event" />
+            <div className="small-eventtitle-box"> 
+                <div className="small-title"> <p>{props.kategorie.Name}</p></div>
             </div>
         </div>
-      </div>
+      </Link>
     );
 }

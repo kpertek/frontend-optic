@@ -1,8 +1,30 @@
-import './Pages.css'
+import './Pages.css';
+import NavIconGroup from "../Navigation/NavIconGroup";
+import Navbar from "../Navigation/Navbar";
+import Breadcrumbs from "../Navigation/Breadcrumbs";
+import { fetchData } from '../../../common/Requests';
+import { useEffect, useState } from 'react';
+import { SmallEventcardContainer } from '../Eventcards/SmallEventcardContainer';
 export default function Veranstalter() {
+    
+    const [topVeranstalter, setTopVeranstalter] = useState([]);
+    const [veranstalter, setVeranstalter] = useState([]);
+
+    useEffect(() => {    
+        fetchData("topveranstalter", setTopVeranstalter);
+        fetchData("veranstalter", setVeranstalter);
+    }, []);
+    
     return (
         <>
-            <h1>Alle Veranstalter</h1>
+            <NavIconGroup />
+            <Navbar />
+            <Breadcrumbs />
+            <div className='content'>
+                <SmallEventcardContainer headline="Top Veranstalter" kategorien={topVeranstalter} maxKategorien={5} art="veranstalter"/>
+                <SmallEventcardContainer headline="Alle Veranstalter" kategorien={veranstalter} art="veranstalter"/>
+            </div>
+            
         </>
     )
 }

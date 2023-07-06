@@ -31,7 +31,7 @@ export default function Metanavi() {
                 <a href="" className="metalink-text" id="last-link" >ALLGEMEINE GESCHÄFTSBEDINGUNGEN</a>
             </div>
 
-            <text className="last-row-footer">©2020-2023 OPTIC Alle Rechte vorbehalten</text>
+            <p className="last-row-footer">©2020-2023 OPTIC Alle Rechte vorbehalten</p>
         </div>
     )
 }
