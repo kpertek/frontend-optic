@@ -32,12 +32,15 @@ function App() {
       setCurrentUser(user);
     }
 
+    AuthService.attachUserObs(setCurrentUser);
+
     EventBus.on("logout", () => {
       logOut();
     });
 
     return () => {
       EventBus.remove("logout");
+      AuthService.removeUserObs(setCurrentUser);
     };
   }, []);
 
