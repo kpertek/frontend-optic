@@ -9,7 +9,7 @@ import { fetchData } from "../../../common/Requests";
 import Ticket from "../Ticket/Ticket";
 import SterneBewertung from "../Bewertung/SterneBewertung";
 
-export default function EinzelnesEvent() {
+export default function EinzelnesEvent(props) {
     
     let { eventID } = useParams();
 
@@ -23,7 +23,7 @@ export default function EinzelnesEvent() {
 
     return (
         <>
-            <NavIconGroup />
+            <NavIconGroup currentUser={props.currentUser}/>
             <NavbarEvent />
             <Breadcrumbs sitename={event.Name}/>
             <div className='content'>

@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { fetchData } from "../../../common/Requests";
 import Navbar from "../Navigation/Navbar";
 
-export default function EinzelneKategorie() {
+export default function EinzelneKategorie(props) {
     
     let { art, id } = useParams();
 
@@ -18,7 +18,7 @@ export default function EinzelneKategorie() {
     
     return (
         <>
-            <NavIconGroup />
+            <NavIconGroup currentUser={props.currentUser}/>
             <Navbar />
             <Breadcrumbs sitename={kategorie.Name}/>
             <div className='content'>

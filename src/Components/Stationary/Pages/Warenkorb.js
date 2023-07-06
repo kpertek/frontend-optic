@@ -7,10 +7,10 @@ import Breadcrumbs from "../Navigation/Breadcrumbs";
 import TicketCount from "../Ticket/TicketCount";
 import Ticket from "../Ticket/Ticket";
 
-export default function Warenkorb () {
+export default function Warenkorb (props) {
     return (
         <>
-            <NavIconGroup showBackground = {false}/>
+            <NavIconGroup showBackground = {false} currentUser={props.currentUser}/>
             <Navbar />
             <Breadcrumbs />
             <div className="content">

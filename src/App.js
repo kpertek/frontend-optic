@@ -46,27 +46,29 @@ function App() {
     setCurrentUser(undefined);
   };
 
+  console.log(currentUser);
+
   return (
     <div className='container'>
           <Routes>
               <Route path="/">
-                  <Route index element={<Startseite/>}/>
-                  <Route path="/startseite" element={<Startseite/>} />
-                  <Route path="/startseite/events" element={<Event/>} />
-                  <Route path="/startseite/spiele" element={<Spiele/>} />
-                  <Route path="/startseite/veranstalter" element={<Veranstalter/>} />
-                  <Route path="/startseite/laender" element={<Laender/>} />
-                  <Route path="/startseite/account" element={<Profil/>} />
-                  <Route path="/startseite/warenkorb" element={<Warenkorb/>} />
-                  <Route path="/startseite/favoriten" element={<Favoriten/>} />
-                  <Route path="/startseite/events/:eventID" element={<EinzelnesEvent/>} />
-                  <Route path="/startseite/:art/:id" element={<EinzelneKategorie/>} />
-                  <Route path="/versand" element={<Versand/>} />
-                  <Route path="/zahlungsmethode" element={<Zahlungsmethode/>} />
-                  <Route path="/bestelluebersicht" element={<Uebersicht/>} />
-                  <Route path="/anmeldung/anmelden" element={<Anmeldung />} />
-                  <Route path="/anmeldung/registrieren" element={<Registrieren />} />
-                  <Route path="/anmeldung/gastanmeldung" element={<GastAnmeldung />} />
+                  <Route index element={<Startseite currentUser={currentUser}/>}/>
+                  <Route path="/startseite" element={<Startseite currentUser={currentUser}/>} />
+                  <Route path="/startseite/events" element={<Event currentUser={currentUser}/>} />
+                  <Route path="/startseite/spiele" element={<Spiele currentUser={currentUser}/>} />
+                  <Route path="/startseite/veranstalter" element={<Veranstalter currentUser={currentUser}/>} />
+                  <Route path="/startseite/laender" element={<Laender currentUser={currentUser}/>} />
+                  <Route path="/startseite/account" element={<Profil currentUser={currentUser}/>} />
+                  <Route path="/startseite/warenkorb" element={<Warenkorb currentUser={currentUser}/>} />
+                  <Route path="/startseite/favoriten" element={<Favoriten currentUser={currentUser}/>} />
+                  <Route path="/startseite/events/:eventID" element={<EinzelnesEvent currentUser={currentUser}/>} />
+                  <Route path="/startseite/:art/:id" element={<EinzelneKategorie currentUser={currentUser}/>} />
+                  <Route path="/versand" element={<Versand currentUser={currentUser}/>} />
+                  <Route path="/zahlungsmethode" element={<Zahlungsmethode currentUser={currentUser}/>} />
+                  <Route path="/bestelluebersicht" element={<Uebersicht currentUser={currentUser}/>} />
+                  <Route path="/anmeldung/anmelden" element={<Anmeldung currentUser={currentUser}/>} />
+                  <Route path="/anmeldung/registrieren" element={<Registrieren currentUser={currentUser}/>} />
+                  <Route path="/anmeldung/gastanmeldung" element={<GastAnmeldung currentUser={currentUser}/>} />
               </Route>
           </Routes>
         <Footer/>

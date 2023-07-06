@@ -6,7 +6,7 @@ import { EventcardContainer } from "../Eventcards/EventcardContainer";
 import { useEffect, useState } from 'react';
 import { fetchData } from '../../../common/Requests';
 
-export default function Event() {
+export default function Event(props) {
 
     const [events, setEvents] = useState([]);
     const [topEvents, setTopEvents] = useState([]);
@@ -18,7 +18,7 @@ export default function Event() {
 
     return (
         <>
-            <NavIconGroup />
+            <NavIconGroup currentUser={props.currentUser}/>
             <Navbar />
             <Breadcrumbs />
             <div className='content'>

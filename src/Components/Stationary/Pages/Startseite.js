@@ -9,7 +9,7 @@ import { fetchData } from '../../../common/Requests';
 import Register from '../User/Register';
 import Login from '../User/Login';
 
-export default function Startseite() {
+export default function Startseite(props) {
     
     const [topEvents, setTopEvents] = useState([]);
     const [topSpiele, setTopSpiele] = useState([]);
@@ -25,7 +25,7 @@ export default function Startseite() {
 
     return (
         <>
-            <NavIconGroup />
+            <NavIconGroup currentUser={props.currentUser}/>
             <Navbar />
             <Breadcrumbs />
             <Register />

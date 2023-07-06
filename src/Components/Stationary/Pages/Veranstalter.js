@@ -5,7 +5,7 @@ import Breadcrumbs from "../Navigation/Breadcrumbs";
 import { fetchData } from '../../../common/Requests';
 import { useEffect, useState } from 'react';
 import { SmallEventcardContainer } from '../Eventcards/SmallEventcardContainer';
-export default function Veranstalter() {
+export default function Veranstalter(props) {
     
     const [topVeranstalter, setTopVeranstalter] = useState([]);
     const [veranstalter, setVeranstalter] = useState([]);
@@ -17,7 +17,7 @@ export default function Veranstalter() {
     
     return (
         <>
-            <NavIconGroup />
+            <NavIconGroup currentUser={props.currentUser}/>
             <Navbar />
             <Breadcrumbs />
             <div className='content'>

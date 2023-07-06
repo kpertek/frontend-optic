@@ -6,7 +6,7 @@ import { fetchData } from '../../../common/Requests';
 import { useEffect, useState } from 'react';
 import { SmallEventcardContainer } from '../Eventcards/SmallEventcardContainer';
 
-export default function Laender() {
+export default function Laender(props) {
     
     const [topLaender, setTopLaender] = useState([]);
     const [laender, setLaender] = useState([]);
@@ -18,7 +18,7 @@ export default function Laender() {
     
     return (
         <>
-            <NavIconGroup />
+            <NavIconGroup currentUser={props.currentUser}/>
             <Navbar />
             <Breadcrumbs />
             <div className='content'>

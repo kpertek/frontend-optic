@@ -4,10 +4,10 @@ import Navbar from "../Navigation/Navbar";
 import Breadcrumbs from "../Navigation/Breadcrumbs";
 import Headline from "../Navigation/Headline";
 
-export default function Favoriten() {
+export default function Favoriten(props) {
     return (
         <>
-            <NavIconGroup showBackground = {false}/>
+            <NavIconGroup showBackground = {false} currentUser={props.currentUser}/>
             <Navbar />
             <Breadcrumbs />
             <div className="content">

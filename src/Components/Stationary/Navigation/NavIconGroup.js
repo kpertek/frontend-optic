@@ -4,19 +4,10 @@ import Warenkorb from './assets/Warenkorb.svg';
 import './NavIconGroup.css';
 import {Link} from "react-router-dom";
 import logo from "./assets/logo3.png";
-import { useEffect, useState } from 'react';
-import AuthService from '../../../services/auth.service';
 
 export default function NavIconGroup(props) {
   
-    const [user, setUser] = useState(undefined);
-    const accountText = ((user===undefined) ? "Account" : user.vorname);
-
-    useEffect(() => {    
-        AuthService.attachUserObs(setUser);
-
-        return () => AuthService.removeUserObs(setUser);
-    }, []);
+    const accountText = ((props.currentUser===undefined) ? "Account" : props.currentUser.vorname);
   
     return (
       <nav className={"navIconGroup " + (props.showBackground && "background")}>

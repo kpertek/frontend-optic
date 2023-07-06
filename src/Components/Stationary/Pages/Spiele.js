@@ -5,7 +5,7 @@ import Breadcrumbs from "../Navigation/Breadcrumbs";
 import { useEffect, useState } from 'react';
 import { fetchData } from '../../../common/Requests';
 import { SmallEventcardContainer } from '../Eventcards/SmallEventcardContainer';
-export default function Spiele() {
+export default function Spiele(props) {
     
     const [topSpiele, setTopSpiele] = useState([]);
     const [spiele, setSpiele] = useState([]);
@@ -17,7 +17,7 @@ export default function Spiele() {
     
     return (
         <>
-            <NavIconGroup />
+            <NavIconGroup currentUser={props.currentUser}/>
             <Navbar />
             <Breadcrumbs />
             <div className='content'>

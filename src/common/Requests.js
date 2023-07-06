@@ -16,7 +16,7 @@ export const fetchData = (url, callback) =>
         .then((data) => {
             callback(data);
         })
-        .catch(() => {})
+        .catch(() => {console.log("Fetch failed")})
     }
     catch (error)
     {
@@ -35,7 +35,7 @@ export const fetchUserData = (url, callback) =>
         .then((data) => {
             callback(data);
         })
-        .catch(() => {})
+        .catch(() => {console.log("Fetch failed")})
     }
     catch (error)
     {
