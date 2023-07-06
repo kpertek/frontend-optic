@@ -1,17 +1,16 @@
 import React, { useEffect, useState } from "react";
 import AuthService from "../../../services/auth.service";
-import userEvent from "@testing-library/user-event";
-import { fetchData, fetchUserData } from "../../../common/Requests";
+import { fetchUserData } from "../../../common/Requests";
 
 const Profil = () => {
   const currentUser = AuthService.getCurrentUser();
-  const [test, setTest] = useState(undefined);
+  const [user, setUser] = useState(undefined);
 
   useEffect(() => {    
-    fetchUserData("user/" + currentUser.id, setTest);
+    fetchUserData("user/" + currentUser.id, setUser);
   }, []);
 
-  if(currentUser === undefined || currentUser.access_token === undefined || test === undefined)
+  if(!AuthService.isLoggedIn() || user === undefined)
   {
     return (
       <div>Sie haben sich leider nicht angemeldet</div>

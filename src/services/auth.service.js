@@ -51,11 +51,24 @@ const getCurrentUser = () => {
   return JSON.parse(localStorage.getItem("user"));
 };
 
+const isLoggedIn = () =>
+{
+  if(getCurrentUser() === undefined || getCurrentUser().access_token === undefined || test === undefined)
+  {
+    return false;
+  }
+  else
+  {
+    return true;
+  }
+};
+
 const AuthService = {
   register,
   login,
   logout,
   getCurrentUser,
+  isLoggedIn,
 };
 
 export default AuthService;
