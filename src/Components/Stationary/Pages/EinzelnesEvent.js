@@ -76,6 +76,7 @@ export default function EinzelnesEvent(props) {
                                 Preis-Leistung
                             </div>
                         </div>
+                        <button className="bewerten_button"> Veranstalter Bewerten</button>
                     </div>
                     <Headline text="Weitere Events"/>
                 </div>
