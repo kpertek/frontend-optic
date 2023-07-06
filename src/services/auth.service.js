@@ -2,21 +2,32 @@ import axios from "axios";
 
 const API_URL = "http://localhost/api/";
 
-const register = (name, email, password) => {
-  return axios.post(API_URL + "register", {
-    name,
+const register = (vorname, nachname, email, password) => {
+  
+  axios.post(API_URL + "register", {
+    vorname,
+    nachname,
     email,
     password,
-  });
+  })
+  .then(
+    (response) => {
+        //hier ggf. nur eine Erfolgsmeldung oder direkt einloggen
+        console.log(response);
+    },
+    (error) => {
+        const resMessage =
+        (error.response &&
+            error.response.data &&
+            error.response.data.message) ||
+        error.message ||
+        error.toString();
+    }
+  )
 };
 
 const login = (email, password) => {
   return axios
-/*      .post(API_URL + "login", null, {
-        //TODO: Achtung: schickt als Get-Parameter, sichtbar in der URL
-        headers: { "Content-Type": "application/json; charset=UTF-8" },
-        params: { email: name, password: password },
-      })*/
       .post(API_URL + "login", {
         email,
         password,

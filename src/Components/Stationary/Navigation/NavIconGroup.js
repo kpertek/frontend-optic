@@ -26,8 +26,10 @@ export default function NavIconGroup(props) {
                   </Link>
               </div>
               <div className="navIconGroupItem">
-                  <img src={Account} alt="Account"></img>
-                  <p>Account</p>
+                    <Link to="/startseite/account">
+                        <img src={Account} alt="Account"></img>
+                        <p>Account</p>
+                    </Link>
               </div>
           </div>
       </nav>

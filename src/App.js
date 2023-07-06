@@ -20,6 +20,7 @@ import Anmeldung from "./Components/Stationary/Pages/CheckOutProzess/Anmeldung";
 import Registrieren from "./Components/Stationary/Pages/CheckOutProzess/Registrieren";
 import GastAnmeldung from "./Components/Stationary/Pages/CheckOutProzess/GastAnmeldung";
 import EinzelneKategorie from './Components/Stationary/Pages/EinzelneKategorie';
+import Profil from './Components/Stationary/User/Profil';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(undefined);
@@ -55,6 +56,7 @@ function App() {
                   <Route path="/startseite/spiele" element={<Spiele/>} />
                   <Route path="/startseite/veranstalter" element={<Veranstalter/>} />
                   <Route path="/startseite/laender" element={<Laender/>} />
+                  <Route path="/startseite/account" element={<Profil/>} />
                   <Route path="/startseite/warenkorb" element={<Warenkorb/>} />
                   <Route path="/startseite/favoriten" element={<Favoriten/>} />
                   <Route path="/startseite/events/:eventID" element={<EinzelnesEvent/>} />

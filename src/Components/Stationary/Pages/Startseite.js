@@ -6,6 +6,8 @@ import { EventcardContainer } from "../Eventcards/EventcardContainer";
 import { SmallEventcardContainer } from '../Eventcards/SmallEventcardContainer';
 import { useEffect, useState } from 'react';
 import { fetchData } from '../../../common/Requests';
+import Register from '../User/Register';
+import Login from '../User/Login';
 
 export default function Startseite() {
     
@@ -26,6 +28,8 @@ export default function Startseite() {
             <NavIconGroup />
             <Navbar />
             <Breadcrumbs />
+            <Register />
+            <Login />
             <div className='content contentStartseite'>
                 <EventcardContainer headline="Top Events" events={topEvents} maxEvents={5}/>
                 <SmallEventcardContainer headline="Top Spiele" kategorien={topSpiele} maxKategorien={5} art="spiele"/>
