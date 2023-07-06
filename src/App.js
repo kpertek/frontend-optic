@@ -27,23 +27,29 @@ function App() {
   const [currentUser, setCurrentUser] = useState(undefined);
 
   useEffect(() => {
+    logIn();
+
+    EventBus.on("login", () => {
+      logIn();
+    });
+
+    EventBus.on("logout", () => {
+      logOut();
+      console.log("Logged out");
+    });
+
+    return () => {
+      EventBus.remove("logout");
+    };
+  }, []);
+
+  const logIn = () => {
     const user = AuthService.getCurrentUser();
 
     if (user) {
       setCurrentUser(user);
     }
-
-    AuthService.attachUserObs(setCurrentUser);
-
-    EventBus.on("logout", () => {
-      logOut();
-    });
-
-    return () => {
-      EventBus.remove("logout");
-      AuthService.removeUserObs(setCurrentUser);
-    };
-  }, []);
+  }
 
   const logOut = () => {
     AuthService.logout();

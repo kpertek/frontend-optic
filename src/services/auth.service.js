@@ -1,4 +1,5 @@
 import axios from "axios";
+import EventBus from "../common/EventBus";
 
 const API_URL = "http://localhost/api/";
 
@@ -19,7 +20,7 @@ const register = (vorname, nachname, email, password, onSuccess, onFail) => {
       localStorage.setItem("user", JSON.stringify(data));
 
       if(onSuccess !== undefined) onSuccess(data);
-      notifyUserObs(data);
+      onLogin(data);
     },
     (error) => {
       const resMessage =
@@ -52,7 +53,7 @@ const login = (email, password, onSuccess, onFail) => {
       localStorage.setItem("user", JSON.stringify(response.data));
 
       if(onSuccess !== undefined) onSuccess(response.data);
-      notifyUserObs(response.data);
+      onLogin(response.data);
     }),
     (error) => {
       const resMessage =
@@ -75,25 +76,9 @@ const getCurrentUser = () => {
   return JSON.parse(localStorage.getItem("user"));
 };
 
-/*
-* UserObserver
-*/
-
-const userObserver = [];
-
-const notifyUserObs = (data) =>
+const onLogin = (data) =>
 {
-  userObserver.forEach((func) => func(data));
-}
-
-const attachUserObs = (callback) =>
-{
-  userObserver.push(callback);
-}
-
-const removeUserObs = (callback) =>
-{
-  userObserver.splice((item) => item !== callback);
+  EventBus.dispatch("login", data);
 }
 
 const AuthService = {
@@ -101,8 +86,6 @@ const AuthService = {
   login,
   logout,
   getCurrentUser,
-  attachUserObs,
-  removeUserObs,
 };
 
 export default AuthService;
