@@ -47,6 +47,14 @@
     text-decoration: none;
 }
 
+.account_button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .navIconGroupItem p {
     color: var(--secWhite);
     font-family: 'Roboto', sans-serif;
@@ -66,4 +74,46 @@
     justify-content: center;
     align-items: center;
     margin-top: 4px;
+}
+
+/*PopUp*/
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.overlay {
+    background: rgba(49,49,49,0.8);
+}
+
+.modal-content {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-content p {
+    font-family: 'Roboto', monospace;
+    font-size: 24px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+}
+
+.close-modal img {
+    cursor: pointer;
 }

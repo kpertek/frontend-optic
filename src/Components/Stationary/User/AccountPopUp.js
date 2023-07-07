@@ -1,9 +1,7 @@
 import { useState } from "react";
 import "./AccountPopUp.css";
-import X from "./assets/Close.svg";
 import Login from "./Login";
 import Register from "./Register";
-import NavIconGroup from "../Navigation/NavIconGroup";
 export default function AccountPopUp() {
 
     const [content, setContent] = useState("Registrieren");
@@ -20,14 +18,10 @@ export default function AccountPopUp() {
 
     return (
         <>
-            <NavIconGroup showBackground={false}/>
             <div className="popup">
                 <div className="popup_ueberschrift_close">
                     <div className="popup_ueberschrift">
                         <p>Account</p>
-                    </div>
-                    <div className="popup_close">
-                        <img src={X}/>
                     </div>
                 </div>
                 <div className="popup_navbar">

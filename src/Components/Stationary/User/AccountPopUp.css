@@ -24,10 +24,6 @@
     font-family: 'Roboto', monospace;
 }
 
-.popup_close {
-
-}
-
 .popup_navbar {
     display: flex;
     flex-direction: row;

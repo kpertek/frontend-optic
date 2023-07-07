@@ -29,7 +29,7 @@ export default function Startseite(props) {
             <NavIconGroup currentUser={props.currentUser}/>
             <Navbar />
             <Breadcrumbs />
-            <LogoutButton />
+            {/*<LogoutButton />*/}
             <div className='content contentStartseite'>
                 <EventcardContainer headline="Top Events" events={topEvents} maxEvents={5}/>
                 <SmallEventcardContainer headline="Top Spiele" kategorien={topSpiele} maxKategorien={5} art="spiele"/>
