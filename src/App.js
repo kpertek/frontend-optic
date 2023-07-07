@@ -79,7 +79,7 @@ function App() {
                   <Route path="/anmeldung/anmelden" element={<Anmeldung currentUser={currentUser}/>} />
                   <Route path="/anmeldung/registrieren" element={<Registrieren currentUser={currentUser}/>} />
                   <Route path="/anmeldung/gastanmeldung" element={<GastAnmeldung currentUser={currentUser}/>} />
-                  <Route path="/popup" element={<AccountPopUp />} />
+                  <Route path="/startseite/popup" element={<AccountPopUp />} />
               </Route>
           </Routes>
         <Footer/>

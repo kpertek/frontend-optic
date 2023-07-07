@@ -26,8 +26,8 @@ const Login = () =>
         <div>
             <form onSubmit={handleLogin}>
                 <div className="login_felder">
-                    <input type="text" placeholder="E-Mail-Adresse" name="email" value={email} onChange={onChangeEmail}/>
-                    <input type="text" placeholder="Passwort" name="password" value={password} onChange={onChangePassword}/>
+                    <input type="email" placeholder="E-Mail-Adresse" name="email" value={email} onChange={onChangeEmail}/>
+                    <input type="password" placeholder="Passwort" name="password" value={password} onChange={onChangePassword}/>
                     <input type="submit" value="Anmelden"/>
                 </div>
             </form>

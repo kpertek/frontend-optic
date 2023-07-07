@@ -40,10 +40,10 @@ const Register = () =>
                 <div className="register_felder">
                     <input type="text" placeholder="Vorname" name="Vorname" value={vorname} onChange={onChangeVorname}/>
                     <input type="text" placeholder="Nachname" name="Nachname" value={nachname} onChange={onChangeNachname}/>
-                    <input type="text" placeholder="E-Mail-Adresse" name="email" value={email} onChange={onChangeEmail}/>
-                    <input type="text" placeholder="Geburtstag" name="Geburtstag"/>
-                    <input type="text" placeholder="Passwort" name="password" value={password} onChange={onChangePassword}/>
-                    <input type="text" placeholder="Passwort wiederholen" name="passwordRep"/>
+                    <input type="email" placeholder="E-Mail-Adresse" name="email" value={email} onChange={onChangeEmail}/>
+                    <input type="date" placeholder="Geburtstag" name="Geburtstag"/>
+                    <input type="password" placeholder="Passwort" name="password" value={password} onChange={onChangePassword}/>
+                    <input type="password" placeholder="Passwort wiederholen" name="passwordRep"/>
                     <input type="submit" value="Jetzt Registrieren"/>
                 </div>
             </form>

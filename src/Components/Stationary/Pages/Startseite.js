@@ -29,8 +29,6 @@ export default function Startseite(props) {
             <NavIconGroup currentUser={props.currentUser}/>
             <Navbar />
             <Breadcrumbs />
-            <Register />
-            <Login />
             <LogoutButton />
             <div className='content contentStartseite'>
                 <EventcardContainer headline="Top Events" events={topEvents} maxEvents={5}/>
