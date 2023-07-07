@@ -26,7 +26,9 @@ export default function Ticket(props) {
                 <div className="beschreibungen">
                     <div className="beschreibung_links">
                         <div className="ticket_ueberschrift">
-                            {event.Name} - {ticket.Name}
+                            <p className="ticket_ueberschrift_Name">{event.Name}</p>
+                            <p className="ticket_ueberschrift_Minus">-</p>
+                            <p>{ticket.Name}</p>
                         </div>
                         <div className="infos_alle">
                             <div className="infos_event">
@@ -74,7 +76,7 @@ export default function Ticket(props) {
                         <div className="gesamtpreis_ticket">
                             <p>Gesamtpreis: </p>
                         </div>
-                        <div className="preis_ticket">
+                        <div className="preis_ticket preis_ticket_gesamt">
                             <p>{ticket.Preis * count} €</p>
                         </div>
                     </div>

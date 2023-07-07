@@ -23,3 +23,8 @@
     font-size: 15px;
     text-align: center;
 }
+
+.ticket-count {
+    height: 24px;
+    width: 100px;
+}

@@ -13,7 +13,7 @@ export default function EinzelnesEvent(props) {
     
     let { eventID } = useParams();
 
-    const [event, setEvent] = useState([]);
+    const [event, setEvent] = useState("");
     const [tickets, setTickets] = useState([]);
 
     useEffect(() => {    
