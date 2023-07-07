@@ -21,3 +21,9 @@
 .singlePageInnerContainer p {
     color: var(--secWhite);
 }
+
+.ticketContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}

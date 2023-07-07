@@ -31,7 +31,7 @@ export default function EinzelnesEvent(props) {
                     <Headline text={event.Name}/>
                     <p>{event.Beschreibung}</p>
                     <Headline text="Tickets"/>
-                    <div>
+                    <div className='ticketContainer'>
                         {tickets.map((ticket, i) => <Ticket event={event} ticket={ticket} key={i}/>)}
                     </div>
                     <Headline text="Bewertung"/>
